@@ -1,27 +1,17 @@
 # Run Reformers unit tests and post JUnit results to Zephyr Scale — all from this repo.
-# No workflow files are required in reformers.content-manager-client or reformers.content-manager-service.
 #
-# Required repository secrets (this repo: autotest):
-#   REFORMERS_GITHUB_SSH_KEY — private SSH key (full PEM/OpenSSH, including BEGIN/END lines) whose
-#       public key is registered on a GitHub user or machine account that can READ both Reformers repos.
-#       (Deploy keys are one repo each; use one user key with access to both repos, or two workflows/secrets.)
-#   ZEPHYR_API_TOKEN
-#   ZEPHYR_TEST_CYCLE_KEY
+# Reformers clone auth (pick one; set matching secret on benny568/autotest):
+#   REFORMERS_GITHUB_PAT — HTTPS clone (recommended for org repos: create PAT on COMPANY account,
+#       fine-grained read on BOTH repos, authorize SSO for hcd-tech; paste secret here)
+#   REFORMERS_GITHUB_SSH_KEY — SSH clone (private key; public key on COMPANY account SSH keys;
+#       must be a user key with access to BOTH repos, not a single-repo deploy key; empty passphrase)
 #
-# Optional secrets:
-#   SIGNIFY_NPM_TOKEN — auth for //chpackages.censeohealth.com/... (often required on GitHub-hosted runners)
+# Other required secrets: ZEPHYR_API_TOKEN, ZEPHYR_TEST_CYCLE_KEY
+# Optional: SIGNIFY_NPM_TOKEN
 #
-# Optional repository variables:
-#   REFORMERS_CLIENT_REPO   default hcd-tech/reformers.content-manager-client
-#   REFORMERS_SERVICE_REPO  default hcd-tech/reformers.content-manager-service
-#   REFORMERS_CLIENT_REF    default main
-#   REFORMERS_SERVICE_REF   default main
-#   ZEPHYR_PROJECT_KEY      optional; overrides config/testing-repos.json
-#
-# Runner: ubuntu-latest works for the .NET service if NuGet feeds are public.
-# The client often needs SIGNIFY_NPM_TOKEN or replace runs-on with your org self-hosted group, e.g.:
-#   runs-on:
-#     group: hcd-tech-linux-x86-64
+# Troubleshooting git exit 128 / "Could not read from remote repository":
+#   - HTTPS: PAT missing, not SSO-authorized for org, or fine-grained token missing one of the two repos
+#   - SSH: wrong private key in secret, public key not on company account, key has passphrase, or deploy key (one repo only)
 
 name: Zephyr Scale — JUnit (orchestrated)
 
@@ -36,6 +26,13 @@ on:
         description: Run .NET service tests and report to Zephyr
         type: boolean
         default: true
+      reformers_clone:
+        description: Clone Reformers repos via HTTPS (company PAT) or SSH (company user key)
+        type: choice
+        options:
+          - https
+          - ssh
+        default: https
   schedule:
     - cron: '0 8 * * 1'
 
@@ -61,7 +58,30 @@ jobs:
       - name: Checkout autotest
         uses: actions/checkout@v4
 
-      - name: Checkout Reformers client
+      - name: Choose Reformers clone transport
+        id: clone
+        run: |
+          USE_SSH=false
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.reformers_clone }}" = "ssh" ]; then
+            USE_SSH=true
+          fi
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "${{ vars.REFORMERS_SCHEDULE_CHECKOUT }}" = "ssh" ]; then
+            USE_SSH=true
+          fi
+          echo "use_ssh=${USE_SSH}" >> "$GITHUB_OUTPUT"
+
+      - name: Checkout Reformers client (HTTPS)
+        if: steps.clone.outputs.use_ssh != 'true'
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.CLIENT_REPO }}
+          ref: ${{ env.CLIENT_REF }}
+          path: client
+          token: ${{ secrets.REFORMERS_GITHUB_PAT }}
+          persist-credentials: false
+
+      - name: Checkout Reformers client (SSH)
+        if: steps.clone.outputs.use_ssh == 'true'
         uses: actions/checkout@v4
         with:
           repository: ${{ env.CLIENT_REPO }}
@@ -70,6 +90,8 @@ jobs:
           ssh-key: ${{ secrets.REFORMERS_GITHUB_SSH_KEY }}
           ssh-known-hosts: |
             github.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0SdG6UOoqKLsabgH5C9okWiQdtUEMxV7J
+            github.com ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEmKSENgeZMfPg72adquDujoL1ATS0FYOaOrIsIB4A671zrIUhuZ6ayRKVrsPGhYPZuYxiNMHZANwW4XI2QkUE=
+            github.com ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCj7ndNxQowgcQnjshcNrqPyf02IptLKtWu0Mq2GfzMhcVcdBBp4J6qEkQ9JZGNn4cq0RBSXx+QPa0BJUkXF7adseoEmgp46gW1GekqRPLgwUWFbwDu726t79Jdo9VzEXT1L9+QzPT1dL0VhuFeIbdBKbwkdkFexAJTL5hjkvMYYXdVwZe68bPHLtdOiPO0TFnAHHjpKNlJKb2dspVFOBF9jLlXil3TqNAkKTQG7dPsxeubZzj0gQDdrFmOtx19qD+djwjgbwXQaZU4SSfUh9FgsVwlUfdPc8/kLGruJzXQwAGviIWTxhhCU5xGT/ALApXR70MVMXfougZhBrc0w==
           persist-credentials: false
 
       - uses: actions/setup-node@v5
@@ -81,7 +103,6 @@ jobs:
       - name: Install autotest dependencies (reporter)
         run: npm ci
 
-      # secrets.* is not allowed in step `if:` — gate inside the script via env instead
       - name: Add Signify npm registry token
         working-directory: client
         env:
@@ -138,7 +159,30 @@ jobs:
       - name: Checkout autotest
         uses: actions/checkout@v4
 
-      - name: Checkout Reformers service
+      - name: Choose Reformers clone transport
+        id: clone
+        run: |
+          USE_SSH=false
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.reformers_clone }}" = "ssh" ]; then
+            USE_SSH=true
+          fi
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "${{ vars.REFORMERS_SCHEDULE_CHECKOUT }}" = "ssh" ]; then
+            USE_SSH=true
+          fi
+          echo "use_ssh=${USE_SSH}" >> "$GITHUB_OUTPUT"
+
+      - name: Checkout Reformers service (HTTPS)
+        if: steps.clone.outputs.use_ssh != 'true'
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.SERVICE_REPO }}
+          ref: ${{ env.SERVICE_REF }}
+          path: service
+          token: ${{ secrets.REFORMERS_GITHUB_PAT }}
+          persist-credentials: false
+
+      - name: Checkout Reformers service (SSH)
+        if: steps.clone.outputs.use_ssh == 'true'
         uses: actions/checkout@v4
         with:
           repository: ${{ env.SERVICE_REPO }}
@@ -147,11 +191,12 @@ jobs:
           ssh-key: ${{ secrets.REFORMERS_GITHUB_SSH_KEY }}
           ssh-known-hosts: |
             github.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0SdG6UOoqKLsabgH5C9okWiQdtUEMxV7J
+            github.com ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEmKSENgeZMfPg72adquDujoL1ATS0FYOaOrIsIB4A671zrIUhuZ6ayRKVrsPGhYPZuYxiNMHZANwW4XI2QkUE=
+            github.com ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCj7ndNxQowgcQnjshcNrqPyf02IptLKtWu0Mq2GfzMhcVcdBBp4J6qEkQ9JZGNn4cq0RBSXx+QPa0BJUkXF7adseoEmgp46gW1GekqRPLgwUWFbwDu726t79Jdo9VzEXT1L9+QzPT1dL0VhuFeIbdBKbwkdkFexAJTL5hjkvMYYXdVwZe68bPHLtdOiPO0TFnAHHjpKNlJKb2dspVFOBF9jLlXil3TqNAkKTQG7dPsxeubZzj0gQDdrFmOtx19qD+djwjgbwXQaZU4SSfUh9FgsVwlUfdPc8/kLGruJzXQwAGviIWTxhhCU5xGT/ALApXR70MVMXfougZhBrc0w==
           persist-credentials: false
 
       - uses: actions/setup-dotnet@v4
         with:
-          # Align with reformers.content-manager-service (e.g. net10.0 on main)
           dotnet-version: '10.0.x'
 
       - name: Install autotest dependencies (reporter)

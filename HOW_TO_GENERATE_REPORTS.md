@@ -108,11 +108,11 @@ Mapping uses `data/zephyr-mapping/*.json` plus legacy `zephyr-test-mapping.json`
 
 ## CI: orchestrated JUnit → Zephyr (no workflows in Reformers repos)
 
-Workflow: **`.github/workflows/zephyr-junit-orchestrated.yml`** in **this** (`autotest`) repository checks out `hcd-tech/reformers.content-manager-client` and `hcd-tech/reformers.content-manager-service` using a PAT, runs the same JUnit-producing tests as the per-app workflows, and calls `report-junit-to-zephyr.js` for each product. Triggers: **`workflow_dispatch`** (toggles per product) and weekly **`schedule`**.
+Workflow: **`.github/workflows/zephyr-junit-orchestrated.yml`** in **this** (`autotest`) repository checks out both Reformers repos (HTTPS or SSH), runs the same JUnit-producing tests as the per-app workflows, and calls `report-junit-to-zephyr.js` for each product. Triggers: **`workflow_dispatch`** (per product + **clone transport**) and weekly **`schedule`**.
 
-**Secrets on the autotest repo:** `REFORMERS_GITHUB_SSH_KEY` (private key for a GitHub identity that can **read** both Reformers repos; checkouts use **SSH**, not HTTPS), `ZEPHYR_API_TOKEN`, `ZEPHYR_TEST_CYCLE_KEY`. **Optional:** `SIGNIFY_NPM_TOKEN` for `npm ci` on the client when using GitHub-hosted runners (Signify npm registry).
+**Secrets on the autotest repo:** `ZEPHYR_API_TOKEN`, `ZEPHYR_TEST_CYCLE_KEY`. **Clone credentials (use one path):** `REFORMERS_GITHUB_PAT` — classic `repo` scope or **fine-grained** token on the **company** account with **Contents: Read** on **both** Reformers repos and **SSO authorized** for `hcd-tech` (recommended default). **Or** `REFORMERS_GITHUB_SSH_KEY` — full private key whose **public** key is on the company account (**user** SSH key with access to both repos; not a single-repo deploy key); choose **ssh** when running the workflow. **Optional:** `SIGNIFY_NPM_TOKEN` for client `npm ci` on hosted runners.
 
-**Variables (optional):** `REFORMERS_CLIENT_REPO`, `REFORMERS_SERVICE_REPO`, `REFORMERS_CLIENT_REF`, `REFORMERS_SERVICE_REF`, `ZEPHYR_PROJECT_KEY`.
+**Variables (optional):** `REFORMERS_CLIENT_REPO`, `REFORMERS_SERVICE_REPO`, `REFORMERS_CLIENT_REF`, `REFORMERS_SERVICE_REF`, `ZEPHYR_PROJECT_KEY`. For **scheduled** runs only: set `REFORMERS_SCHEDULE_CHECKOUT` to `ssh` if you use SSH instead of HTTPS (default is HTTPS).
 
 The service job writes a temporary `Directory.Build.props` in the checkout so `JunitXml.TestLogger` applies without changing the Reformers repo. Switch **`runs-on`** in the workflow to your org’s self-hosted runner group if the client cannot reach private npm from `ubuntu-latest`.
 
