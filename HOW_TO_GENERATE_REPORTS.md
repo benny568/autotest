@@ -106,6 +106,16 @@ Dry-run: `node scripts/report-junit-to-zephyr.js --dry-run path/to/junit.xml`
 
 Mapping uses `data/zephyr-mapping/*.json` plus legacy `zephyr-test-mapping.json`. JUnit `classname` + `name` are matched to `repoId::FQN` patterns (see script header).
 
+## CI: orchestrated JUnit → Zephyr (no workflows in Reformers repos)
+
+Workflow: **`.github/workflows/zephyr-junit-orchestrated.yml`** in **this** (`autotest`) repository checks out `hcd-tech/reformers.content-manager-client` and `hcd-tech/reformers.content-manager-service` using a PAT, runs the same JUnit-producing tests as the per-app workflows, and calls `report-junit-to-zephyr.js` for each product. Triggers: **`workflow_dispatch`** (toggles per product) and weekly **`schedule`**.
+
+**Secrets on the autotest repo:** `REFORMERS_GITHUB_PAT` (read both Reformers repos), `ZEPHYR_API_TOKEN`, `ZEPHYR_TEST_CYCLE_KEY`. **Optional:** `SIGNIFY_NPM_TOKEN` for `npm ci` on the client when using GitHub-hosted runners (Signify npm registry).
+
+**Variables (optional):** `REFORMERS_CLIENT_REPO`, `REFORMERS_SERVICE_REPO`, `REFORMERS_CLIENT_REF`, `REFORMERS_SERVICE_REF`, `ZEPHYR_PROJECT_KEY`.
+
+The service job writes a temporary `Directory.Build.props` in the checkout so `JunitXml.TestLogger` applies without changing the Reformers repo. Switch **`runs-on`** in the workflow to your org’s self-hosted runner group if the client cannot reach private npm from `ubuntu-latest`.
+
 ## Snapshots: .NET test count and optional service coverage
 
 Each `POST /api/snapshot` adds **`dotnetTestCases`** when the service repo path is configured (same discovery as above).

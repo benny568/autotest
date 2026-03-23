@@ -1,0 +1,180 @@
+# Run Reformers unit tests and post JUnit results to Zephyr Scale — all from this repo.
+# No workflow files are required in reformers.content-manager-client or reformers.content-manager-service.
+#
+# Required repository secrets (this repo: autotest):
+#   REFORMERS_GITHUB_PAT — classic or fine-grained PAT with read access to BOTH Reformers repos
+#   ZEPHYR_API_TOKEN
+#   ZEPHYR_TEST_CYCLE_KEY
+#
+# Optional secrets:
+#   SIGNIFY_NPM_TOKEN — auth for //chpackages.censeohealth.com/... (often required on GitHub-hosted runners)
+#
+# Optional repository variables:
+#   REFORMERS_CLIENT_REPO   default hcd-tech/reformers.content-manager-client
+#   REFORMERS_SERVICE_REPO  default hcd-tech/reformers.content-manager-service
+#   REFORMERS_CLIENT_REF    default main
+#   REFORMERS_SERVICE_REF   default main
+#   ZEPHYR_PROJECT_KEY      optional; overrides config/testing-repos.json
+#
+# Runner: ubuntu-latest works for the .NET service if NuGet feeds are public.
+# The client often needs SIGNIFY_NPM_TOKEN or replace runs-on with your org self-hosted group, e.g.:
+#   runs-on:
+#     group: hcd-tech-linux-x86-64
+
+name: Zephyr Scale — JUnit (orchestrated)
+
+on:
+  workflow_dispatch:
+    inputs:
+      run_client:
+        description: Run TS client tests and report to Zephyr
+        type: boolean
+        default: true
+      run_service:
+        description: Run .NET service tests and report to Zephyr
+        type: boolean
+        default: true
+  schedule:
+    - cron: '0 8 * * 1'
+
+concurrency:
+  group: zephyr-junit-orchestrated-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  CLIENT_REPO: "${{ vars.REFORMERS_CLIENT_REPO || 'hcd-tech/reformers.content-manager-client' }}"
+  SERVICE_REPO: "${{ vars.REFORMERS_SERVICE_REPO || 'hcd-tech/reformers.content-manager-service' }}"
+  CLIENT_REF: "${{ vars.REFORMERS_CLIENT_REF || 'main' }}"
+  SERVICE_REF: "${{ vars.REFORMERS_SERVICE_REF || 'main' }}"
+
+jobs:
+  client:
+    name: Client — tests + Zephyr
+    runs-on: ubuntu-latest
+    if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.run_client)
+    steps:
+      - name: Checkout autotest
+        uses: actions/checkout@v4
+
+      - name: Checkout Reformers client
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.CLIENT_REPO }}
+          ref: ${{ env.CLIENT_REF }}
+          path: client
+          token: ${{ secrets.REFORMERS_GITHUB_PAT }}
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22.x'
+          cache: npm
+          cache-dependency-path: client/package-lock.json
+
+      - name: Install autotest dependencies (reporter)
+        run: npm ci
+
+      - name: Add Signify npm registry token
+        if: ${{ secrets.SIGNIFY_NPM_TOKEN != '' }}
+        working-directory: client
+        run: |
+          echo '' >> .npmrc
+          echo '//chpackages.censeohealth.com/npm/npm/:_authToken=${{ secrets.SIGNIFY_NPM_TOKEN }}' >> .npmrc
+
+      - name: Install client dependencies
+        working-directory: client
+        run: npm ci
+
+      - name: Typecheck client test projects
+        working-directory: client
+        run: npm run typecheck:test
+
+      - name: Run client unit tests (JUnit)
+        working-directory: client
+        run: |
+          set -e
+          mkdir -p "${GITHUB_WORKSPACE}/client/reports"
+          for p in cms-common cms-components cms-context cms-rules cms-service cms-writer content-weaver context-writer; do
+            echo "======== nx test $p ========"
+            npx nx test "$p" -- --reporter=junit --outputFile="${GITHUB_WORKSPACE}/client/reports/${p}.xml"
+          done
+
+      - name: Push client executions to Zephyr Scale
+        if: success() || failure()
+        env:
+          ZEPHYR_API_TOKEN: ${{ secrets.ZEPHYR_API_TOKEN }}
+          ZEPHYR_TEST_CYCLE_KEY: ${{ secrets.ZEPHYR_TEST_CYCLE_KEY }}
+          ZEPHYR_PROJECT_KEY: ${{ vars.ZEPHYR_PROJECT_KEY }}
+          ZEPHYR_JUNIT_REPO_ID: reformers.content-manager-client
+        run: node scripts/report-junit-to-zephyr.js "${GITHUB_WORKSPACE}/client/reports"
+        continue-on-error: true
+
+      - name: Upload JUnit artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: junit-client
+          path: client/reports/*.xml
+          if-no-files-found: ignore
+
+  service:
+    name: Service — tests + Zephyr
+    runs-on: ubuntu-latest
+    if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.run_service)
+    steps:
+      - name: Checkout autotest
+        uses: actions/checkout@v4
+
+      - name: Checkout Reformers service
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ env.SERVICE_REPO }}
+          ref: ${{ env.SERVICE_REF }}
+          path: service
+          token: ${{ secrets.REFORMERS_GITHUB_PAT }}
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Install autotest dependencies (reporter)
+        run: npm ci
+
+      - name: Ensure JUnit logger for .NET test projects
+        working-directory: service
+        run: |
+          cat > Directory.Build.props << 'EOF'
+          <Project>
+            <ItemGroup Condition="$(MSBuildProjectName.Contains('Tests'))">
+              <PackageReference Include="JunitXml.TestLogger" Version="4.1.0" />
+            </ItemGroup>
+          </Project>
+          EOF
+
+      - name: Restore and test service (JUnit)
+        working-directory: service
+        run: |
+          mkdir -p "${GITHUB_WORKSPACE}/reports-service"
+          dotnet restore src/ContentManagerService.sln
+          dotnet test src/ContentManagerService.sln -m:1 --no-restore \
+            --logger:"junit;LogFilePath=${GITHUB_WORKSPACE}/reports-service/dotnet-junit.xml"
+
+      - name: Push service executions to Zephyr Scale
+        if: success() || failure()
+        env:
+          ZEPHYR_API_TOKEN: ${{ secrets.ZEPHYR_API_TOKEN }}
+          ZEPHYR_TEST_CYCLE_KEY: ${{ secrets.ZEPHYR_TEST_CYCLE_KEY }}
+          ZEPHYR_PROJECT_KEY: ${{ vars.ZEPHYR_PROJECT_KEY }}
+          ZEPHYR_JUNIT_REPO_ID: reformers.content-manager-service
+        run: node scripts/report-junit-to-zephyr.js "${GITHUB_WORKSPACE}/reports-service"
+        continue-on-error: true
+
+      - name: Upload JUnit artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: junit-service
+          path: reports-service/*.xml
+          if-no-files-found: ignore

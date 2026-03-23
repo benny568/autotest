@@ -146,6 +146,7 @@ The graph shows **Defects Logged**, **Open Defects**, and **Test Cases** over ti
 - **Snapshots / UI:** The target codebase path defaults in `server/index.js`; override with **`REFORMERS_REPO_PATH`** (see `.env.example`).
 - **Zephyr + multi-repo:** See **`config/testing-repos.json`** and `docs/plans/2026-03-20-testing-zephyr-weekly-design.md`.
 - **Commands:** `npm run zephyr:sync`, `npm run dotnet:discover`, `npm run testing:weekly-delta` — documented in [HOW_TO_GENERATE_REPORTS.md](./HOW_TO_GENERATE_REPORTS.md).
+- **CI without Reformers workflow files:** This repo can run **`.github/workflows/zephyr-junit-orchestrated.yml`**, which checks out both Reformers repos, produces JUnit, and posts to Zephyr Scale (secrets on **autotest** only). Details in [HOW_TO_GENERATE_REPORTS.md](./HOW_TO_GENERATE_REPORTS.md).
 
 ## Building for Production
 
