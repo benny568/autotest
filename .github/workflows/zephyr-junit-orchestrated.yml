@@ -2,7 +2,9 @@
 # No workflow files are required in reformers.content-manager-client or reformers.content-manager-service.
 #
 # Required repository secrets (this repo: autotest):
-#   REFORMERS_GITHUB_PAT — classic or fine-grained PAT with read access to BOTH Reformers repos
+#   REFORMERS_GITHUB_SSH_KEY — private SSH key (full PEM/OpenSSH, including BEGIN/END lines) whose
+#       public key is registered on a GitHub user or machine account that can READ both Reformers repos.
+#       (Deploy keys are one repo each; use one user key with access to both repos, or two workflows/secrets.)
 #   ZEPHYR_API_TOKEN
 #   ZEPHYR_TEST_CYCLE_KEY
 #
@@ -65,7 +67,10 @@ jobs:
           repository: ${{ env.CLIENT_REPO }}
           ref: ${{ env.CLIENT_REF }}
           path: client
-          token: ${{ secrets.REFORMERS_GITHUB_PAT }}
+          ssh-key: ${{ secrets.REFORMERS_GITHUB_SSH_KEY }}
+          ssh-known-hosts: |
+            github.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0SdG6UOoqKLsabgH5C9okWiQdtUEMxV7J
+          persist-credentials: false
 
       - uses: actions/setup-node@v5
         with:
@@ -139,7 +144,10 @@ jobs:
           repository: ${{ env.SERVICE_REPO }}
           ref: ${{ env.SERVICE_REF }}
           path: service
-          token: ${{ secrets.REFORMERS_GITHUB_PAT }}
+          ssh-key: ${{ secrets.REFORMERS_GITHUB_SSH_KEY }}
+          ssh-known-hosts: |
+            github.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0SdG6UOoqKLsabgH5C9okWiQdtUEMxV7J
+          persist-credentials: false
 
       - uses: actions/setup-dotnet@v4
         with:

@@ -110,7 +110,7 @@ Mapping uses `data/zephyr-mapping/*.json` plus legacy `zephyr-test-mapping.json`
 
 Workflow: **`.github/workflows/zephyr-junit-orchestrated.yml`** in **this** (`autotest`) repository checks out `hcd-tech/reformers.content-manager-client` and `hcd-tech/reformers.content-manager-service` using a PAT, runs the same JUnit-producing tests as the per-app workflows, and calls `report-junit-to-zephyr.js` for each product. Triggers: **`workflow_dispatch`** (toggles per product) and weekly **`schedule`**.
 
-**Secrets on the autotest repo:** `REFORMERS_GITHUB_PAT` (read both Reformers repos), `ZEPHYR_API_TOKEN`, `ZEPHYR_TEST_CYCLE_KEY`. **Optional:** `SIGNIFY_NPM_TOKEN` for `npm ci` on the client when using GitHub-hosted runners (Signify npm registry).
+**Secrets on the autotest repo:** `REFORMERS_GITHUB_SSH_KEY` (private key for a GitHub identity that can **read** both Reformers repos; checkouts use **SSH**, not HTTPS), `ZEPHYR_API_TOKEN`, `ZEPHYR_TEST_CYCLE_KEY`. **Optional:** `SIGNIFY_NPM_TOKEN` for `npm ci` on the client when using GitHub-hosted runners (Signify npm registry).
 
 **Variables (optional):** `REFORMERS_CLIENT_REPO`, `REFORMERS_SERVICE_REPO`, `REFORMERS_CLIENT_REF`, `REFORMERS_SERVICE_REF`, `ZEPHYR_PROJECT_KEY`.
 
