@@ -1,0 +1,24 @@
+{
+  "projectKey": "CW",
+  "repos": [
+    {
+      "id": "reformers.content-manager-client",
+      "type": "typescript",
+      "gitBranch": "main",
+      "envPath": "REFORMERS_REPO_PATH",
+      "defaultPath": "/Users/bodaly/sig/reformers.content-manager-client",
+      "zephyrFolderId": 34798505,
+      "zephyrExtraLabels": ["CM-Client"],
+      "legacyMappingFile": "zephyr-test-mapping.json"
+    },
+    {
+      "id": "reformers.content-manager-service",
+      "type": "dotnet",
+      "gitBranch": "main",
+      "envPath": "REFORMERS_SERVICE_REPO_PATH",
+      "defaultPath": "/Users/bodaly/sig/reformers.content-manager-service",
+      "zephyrFolderId": 34798505,
+      "zephyrExtraLabels": ["CM-Service"]
+    }
+  ]
+}

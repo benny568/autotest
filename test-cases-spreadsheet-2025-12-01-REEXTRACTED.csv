@@ -1,0 +1,1671 @@
+Domain,Category,Test
+Other,Uncategorized,Render read-only content with value
+Other,Uncategorized,Render read-only content with true value
+Other,Uncategorized,Render read-only content with false value
+Other,Uncategorized,Not render read-only content without value
+Other,Uncategorized,Display multi select correctly when disabled
+Other,Uncategorized,Display checkbox with single display type
+Other,Uncategorized,Set state with answer when checkbox single display type is selected
+Other,Uncategorized,Clear answer when clicked current answer
+Other,Uncategorized,Load checkboxes with single display type that has previous answers selected
+Other,Uncategorized,Set state with answer when radio multi display type is selected
+Other,Uncategorized,Load checkboxes with multi display type that has previous answers selected
+Other,Uncategorized,Display textbox input option when there is other answer
+Other,Uncategorized,Switch focus to textbox when other radio is selected
+Other,Uncategorized,Set state with other answer when checkbox multi display type with other answer is selected
+Other,Uncategorized,Display previous input in textbox input option when there is other answer entered
+Other,Uncategorized,Clear answer when all answer values are removed
+Other,Uncategorized,Clear other answer when clear button is clicked
+Other,Uncategorized,Clear other answer when text is removed with backspace
+Other,Uncategorized,Display none option when noneAnswer is present
+Other,Uncategorized,Select none option when clicked
+Other,Uncategorized,Clear all other answers when none option is selected
+Other,Uncategorized,Clear none option when any other answer is selected
+Other,Uncategorized,Clear none option when any regular answer option is selected while none is active
+Other,Uncategorized,Display validation error when there is one present
+Other,Uncategorized,Clear validation onBlur when text has input
+Other,Uncategorized,Rerun validation on each update
+Other,Uncategorized,Display launch button with no answers
+Other,Uncategorized,Display button and existing answers
+Other,Uncategorized,Display correctly when disabled
+Other,Uncategorized,Try launch external editor if on iOS
+Other,Uncategorized,Display answer from external editor event if on iOS
+Other,Uncategorized,Clear answer from external editor event if empty image array returned
+Other,Uncategorized,No nothing if no response from external editor event
+Other,Uncategorized,Display switch
+Other,Uncategorized,Display switch correctly when disabled
+Other,Uncategorized,Save switch value
+Other,Uncategorized,Display yes no
+Other,Uncategorized,Display switch correctly when disabled
+Other,Uncategorized,Save value
+Other,Uncategorized,Clear value
+Other,Uncategorized,Display blood pressure text box
+Other,Uncategorized,Display textbox correctly when disabled
+Other,Uncategorized,Save textbox value
+Other,Uncategorized,Clear answers when clear button is clicked
+Other,Uncategorized,Clear answers when text is removed using backspace
+Other,Uncategorized,Clear answers when text is changed from valid to invalid answer
+Other,Uncategorized,Load with textbox value
+Other,Uncategorized,Display correct error message when both values are out of range
+Other,Uncategorized,Display correct error message when systolic value is out of range and when systolic is higher than diastolic
+Other,Uncategorized,Display correct error message when diastolic value is out of range and clear when corrected
+Other,Uncategorized,Display correct error message when diastolic value is out of range and clear when clear button is clicked
+Other,Uncategorized,Show the modal with canvas
+Other,Uncategorized,Call its respective function on modal button clicks
+Other,Uncategorized,Display launcher button and existing signature
+Other,Uncategorized,Display correctly when disabled
+Other,Uncategorized,Render the signature popup on launcher
+Other,Uncategorized,Open the existing signature on popup
+Other,Uncategorized,Save the signature
+Other,Uncategorized,Renders modal with correct header in edit mode
+Other,Uncategorized,Renders modal with correct header in add mode
+Other,Uncategorized,Renders column answers correctly in edit mode
+Other,Uncategorized,Renders switch column correctly
+Other,Uncategorized,Disables save button when required columns have no values
+Other,Uncategorized,Enables save button when required columns have values
+Other,Uncategorized,Handles mixed required and regular columns correctly
+Other,Uncategorized,Ignores hidden required columns when checking save state
+Other,Uncategorized,Works correctly with different column types marked as required
+Other,Uncategorized,Renders table with correct headers and rows
+Other,Uncategorized,Renders table with correct headers and no answer
+Other,Uncategorized,Renders empty table when no answer is provided
+Other,Uncategorized,Sort data ascending
+Other,Uncategorized,Sort data descending
+Other,Uncategorized,Renders table with different column types correctly
+Other,Uncategorized,Renders only columns and associated data that are not readonly
+Other,Uncategorized,Renders a TextList with a single answer as a single value
+Other,Uncategorized,Renders a TextList with multiple answers as a csv
+Other,Uncategorized,Properly rejects invalid MM/YYYY and MM/DD/YYYY date formats
+Other,Uncategorized,Renders a table with pre-populated answers
+Other,Uncategorized,Updates an answer when a row is added
+Other,Uncategorized,Updates answer when a row is deleted
+Other,Uncategorized,Uses addNewRowLabel when provided
+Other,Uncategorized,Falls back to questionText when addNewRowLabel is not provided
+Other,Uncategorized,Uses addNewRowLabel over questionText when both are provided
+Other,Uncategorized,Does not show add button when content is readonly
+Other,Uncategorized,Display textbox
+Other,Uncategorized,Display textbox correctly when disabled
+Other,Uncategorized,Save textbox value and publish to mobile when focus is lost
+Other,Uncategorized,Clear answer when clear button is clicked
+Other,Uncategorized,Render data search values when answer exists for the row
+Other,Uncategorized,Render multiple answer values when multiple answers exist for the row
+Other,Uncategorized,Render empty div when no answer exists for the row
+Other,Uncategorized,Render empty div when no answer exists at all
+Other,Uncategorized,Handle numeric values correctly
+Other,Uncategorized,Handle boolean values correctly
+Other,Uncategorized,Renders with placeholder text
+Other,Uncategorized,Renders with default placeholder
+Other,Uncategorized,Shows filtered results when typing more than 2 characters
+Other,Uncategorized,Does not show results when typing 2 or fewer characters
+Other,Uncategorized,Shows multiple matching results
+Other,Uncategorized,Calls onSelect when item is clicked
+Other,Uncategorized,Clears search and shows selected value when item is selected
+Other,Uncategorized,Clears selected value when typing new search
+Other,Uncategorized,Limits results to maxResults
+Other,Uncategorized,Hides results when clicking outside
+Other,Uncategorized,Uses custom testId when provided
+Other,Uncategorized,Can be disabled
+Other,Uncategorized,Does not show results when disabled
+Other,Uncategorized,Applies custom className
+Other,Uncategorized,Searches case-insensitively
+Other,Uncategorized,Sorts results by search term position
+Other,Uncategorized,Display single select correctly when disabled
+Other,Uncategorized,Display radio buttons with single display type
+Other,Uncategorized,Set state with answer when radio button single display type is selected
+Other,Uncategorized,Clear answer when clicked current answer
+Other,Uncategorized,Display segmented buttons
+Other,Uncategorized,Set state with answer when segmented button is clicked
+Other,Uncategorized,Unset state of answer when already selected segmented button is clicked
+Other,Uncategorized,Load radio buttons with single display type that has previous answer selected
+Other,Uncategorized,Load segmented buttons with previous answer selected
+Other,Uncategorized,Display radio buttons with multi display type
+Other,Uncategorized,Set state with answer when radio multi display type is selected
+Other,Uncategorized,Load radio buttons with multi display type that has previous answer selected
+Other,Uncategorized,Display textbox input option when there is other answer
+Other,Uncategorized,Switch focus to textbox when other radio is selected
+Other,Uncategorized,Set state with other answer when radio multi display type with other answer is selected
+Other,Uncategorized,Not restore previously typed value when other radio is checked then unchecked
+Other,Uncategorized,Display previous input in textbox input option when there is other answer entered
+Other,Uncategorized,Clear answer value when clear button is clicked
+Other,Uncategorized,Clear answer value when text is removed using backspace
+Other,Uncategorized,Display validation error when there is one present
+Other,Uncategorized,Clear validation onBlur when text has input
+Other,Uncategorized,Rerun validation on each update
+Other,Uncategorized,Return empty string when no otherAnswer is configured
+Other,Uncategorized,Return empty string when other option is selected with valid text
+Other,Uncategorized,Return error when other option is selected but text is missing
+Other,Uncategorized,Return error when other option is selected but text is empty
+Other,Uncategorized,Render PCP Lookup writer
+Other,Uncategorized,Add another row when response is updated
+Other,Uncategorized,Select a provider when radio clicked
+Other,Uncategorized,Render message to provider when suggested clinicians are not available
+Other,Uncategorized,Render provider when available on the state
+Other,Uncategorized,Render a provider with partial details from lookup response
+Other,Uncategorized,Render when there are no meds
+Other,Uncategorized,Render with existing meds
+Other,Uncategorized,Render empty field as required if still in use
+Other,Uncategorized,Render null field without required if not still in use
+Other,Uncategorized,Render empty field without required if not still in use
+Other,Uncategorized,Launch editor when add medication is clicked
+Other,Uncategorized,Launch editor for edit when medication row is clicked
+Other,Uncategorized,Not launch editor if content is readonly
+Other,Uncategorized,Not be able to edit if not still in use
+Other,Uncategorized,Be able to set stillInUse to false
+Other,Uncategorized,Launch editor for edit when medication stillInUse switch is clicked and is missing required fields
+Other,Uncategorized,Not launch editor when medication stillInUse switch is clicked and has all required fields
+Other,Uncategorized,Render
+Other,Uncategorized,Render required asterisk when still in use and no last fill date and not unknown
+Other,Uncategorized,Render
+Other,Uncategorized,Not launch editor when medication is valid with isLastFilledDateUnknown true
+Other,Uncategorized,Show prescriber required asterisk when CMR is valid and medication is still in use but no prescriber
+Other,Uncategorized,Not show prescriber required asterisk when CMR is not valid even if medication is still in use and no prescriber
+Other,Uncategorized,Not show prescriber required asterisk when medication is not still in use even if CMR is valid
+Other,Uncategorized,Show prescriber name when prescriber is present
+Other,Uncategorized,Launch editor when stillInUse is changed to true and medication is invalid due to missing prescriber with CMR validation
+Other,Uncategorized,Render as required
+Other,Uncategorized,Render as not required
+Other,Uncategorized,Render single chosen diagnosis
+Other,Uncategorized,Render single entered diagnosis
+Other,Uncategorized,Render combined 2 diagnoses
+Other,Uncategorized,Render combined 4 diagnoses
+Other,Uncategorized,Be valid if no validations
+Other,Uncategorized,Be valid if value is empty
+Other,Uncategorized,Return error if value is less than minLength
+Other,Uncategorized,Return error if value is greater than maxLength
+Other,Uncategorized,Return error if value is not within range of minLength and maxLength
+Other,Uncategorized,Return error if value is not a exact match of minLength and maxLength
+Other,Uncategorized,Be valid if no validations
+Other,Uncategorized,Be valid if value is empty
+Other,Uncategorized,Return error if value is not within single lengthRange
+Other,Uncategorized,Return error if value is not within any of the lengthRanges (2)
+Other,Uncategorized,Return error if value is not within any of the lengthRanges (3)
+Other,Uncategorized,Be valid if value is within any of the lengthRanges
+Other,Uncategorized,Display button
+Other,Uncategorized,Display correctly when disabled
+Other,Uncategorized,Display with existing value
+Other,Uncategorized,Display correctly with existing value
+Other,Uncategorized,Display correctly with existing value and disabled
+Other,Uncategorized,Display correctly with existing and display error of specific length
+Other,Uncategorized,Display correctly with length range error
+Other,Uncategorized,Display correctly with min value error
+Other,Uncategorized,Clear invalid answer on blur
+Other,Uncategorized,Clear answer when clear icon is clicked
+Other,Uncategorized,Keep textbox value and validation errors when no answer is set
+Other,Uncategorized,Display correctly with max value error
+Other,Uncategorized,Display error message when value does match any of the expected lengths
+Other,Uncategorized,Display no error when no validation
+Other,Uncategorized,Try scan barcode and show input if no result
+Other,Uncategorized,Try scan barcode and set answer on blur
+Other,Uncategorized,Try launch external editor if on iOS
+Other,Uncategorized,Display answer from external editor event if on iOS
+Other,Uncategorized,Not render model if barcode detector is not on window
+Other,Uncategorized,Not render model if barcode detector is on mobile
+Other,Uncategorized,Render and listen on detect
+Other,Uncategorized,Return an empty array on cancel
+Other,Uncategorized,Returns correct date value regardless of timezone
+Other,Uncategorized,Returns correct date value regardless of timezone for date object
+Other,Uncategorized,Allow date within range (days from today)
+Other,Uncategorized,Reject date before minimum range (days from today)
+Other,Uncategorized,Reject date after maximum range (days from today)
+Other,Uncategorized,Handle min-only range validation
+Other,Uncategorized,Handle max-only range validation
+Other,Uncategorized,Display textbox with MM/DD/YYYY placeholder
+Other,Uncategorized,Display textbox with MM/YYYY placeholder
+Other,Uncategorized,Display textbox correctly when disabled
+Other,Uncategorized,Save textbox value with MM/DD/YYYY format
+Other,Uncategorized,Save textbox value with MM/YYYY format
+Other,Uncategorized,Disable date input when checkbox is clicked
+Other,Uncategorized,Call clear validation when unknown checkbox is checked
+Other,Uncategorized,Render full answer with single date answer
+Other,Uncategorized,Render full answer with Day Month Year answer
+Other,Uncategorized,Render full answer with Month Year answer
+Other,Uncategorized,Render with day month and year answer
+Other,Uncategorized,Render with month and year answer
+Other,Uncategorized,Clear answer when box value is emptied
+Other,Uncategorized,Reset answer for partial date when checkbox unchecked
+Other,Uncategorized,Clear textbox value when clear answer is called
+Other,Uncategorized,Display correct error message when date format is invalid
+Other,Uncategorized,Display correct error message when the date does not exist
+Other,Uncategorized,Display correct error message when the date is not in the past
+Other,Uncategorized,Check if zero from the year is preserved when we delete part of the month value
+Other,Uncategorized,Display correct error message when the date is not in the present
+Other,Uncategorized,Display correct error message when the date is not in the future
+Other,Uncategorized,Display correct error message when the date is not in the current or present
+Other,Uncategorized,Display correct error message when the date is invalid
+Other,Uncategorized,Restore previous typed answer when check box is selected then unselected
+Other,Uncategorized,Display correct error message when the date is not in the current
+Other,Uncategorized,Renders input with placeholder
+Other,Uncategorized,Displays error message
+Other,Uncategorized,Applies disabled state
+Other,Uncategorized,Renders with custom className
+Other,Uncategorized,Display textbox
+Other,Uncategorized,Display textbox correctly when disabled
+Other,Uncategorized,Save textbox value
+Other,Uncategorized,Validate correct value and display error message for incorrect value of textbox
+Other,Uncategorized,Clear textbox answer when clear icon is clicked
+Other,Uncategorized,Clear textbox answer when text is cleared using backspace
+Other,Uncategorized,Remove error message when textbox is cleared using clear icon and backspace
+Other,Uncategorized,Save textbox value with 0
+Other,Uncategorized,Display no validations when text box is empty
+Other,Uncategorized,Render PCP Lookup when DisplayType is PcpLookup
+Other,Uncategorized,Render array of Content when passed within ContentList
+Other,Uncategorized,Display required asterisk icon when viewMetadata.required is true
+Other,Uncategorized,Not display required asterisk icon when viewMetadata.required is false
+Other,Uncategorized,Show unknown checkbox when ContentList has unknownOption
+Other,Uncategorized,Not show unknown checkbox when ContentList does not have unknownOption
+Other,Uncategorized,Show unknown checkbox even when content is Table type (since it checks ContentList level)
+Other,Uncategorized,Not show unknown checkbox when ContentList has no unknownOption
+Other,Uncategorized,Render unknown checkbox unchecked initially
+Other,Uncategorized,Call clearAndSetAnswer when unknown checkbox is checked
+Other,Uncategorized,Call clearAnswer when unknown checkbox is unchecked
+Other,Uncategorized,Show unknown checkbox for multiple content items when ContentList has unknownOption
+Other,Uncategorized,Disable items grid but keep unknown checkbox enabled when checked
+Other,Uncategorized,Derives memberInfoForSpirometry from tagged request answers
+Other,Uncategorized,Writes result answers when setSpirometry is called
+Other,Uncategorized,Clears result answers when clearSpirometry is called
+Other,Uncategorized,Returns setPCP and clearAnswer functions
+Other,Uncategorized,Clears the answers when clearAnswer is invoked
+Other,Uncategorized,Returns answers object if there are answers on the state
+Other,Uncategorized,Sets answers when setPCP is invoked
+Other,Uncategorized,Sets partial answer if not all information is available
+Other,Uncategorized,Stringify undefined answer to empty string
+Other,Uncategorized,Stringify answer using firstAnswer
+Other,Uncategorized,Stringify answer using answersByAnswerId
+Other,Uncategorized,Render correctly without border
+Other,Uncategorized,Render correctly with border
+Other,Uncategorized,Renders with title and children
+Other,Uncategorized,Collapses and expands when header is clicked
+Other,Uncategorized,Can be collapsed by default
+Other,Uncategorized,Does not collapse if canCollapse is false
+Other,Uncategorized,Renders icon and calls onIconClick when icon is clicked
+Other,Uncategorized,Return true if user agent includes context writer
+Other,Uncategorized,Return false if user agent does not include context writer
+Other,Uncategorized,Render children
+Other,Uncategorized,Validate the values and set and unset error on state
+Other,Uncategorized,Return the errors for that page only for visible content
+Other,Uncategorized,Filter out error messages for non-visible content
+Other,Uncategorized,Return empty when all content with errors is not visible
+Other,Uncategorized,Handle missing view metadata gracefully
+Other,Uncategorized,Return correct firstContentId based on pageContentIndex for visible content
+Other,Uncategorized,Search not render results if there is no match
+Other,Uncategorized,Search only render results that match
+Other,Uncategorized,Search only allow one item selected when set to single select
+Other,Uncategorized,Search only allow multiple items to be selected when set to multi select
+Other,Uncategorized,Search can have pre-selected resource
+Other,Uncategorized,Search result can be disabled by function
+Other,Uncategorized,Show spinner when fetching results
+Other,Uncategorized,Search render both contents and groups when searching for Content and Group types with ContentList and Matrix under Section
+Other,Uncategorized,Display Key and value for text
+Other,Uncategorized,Display Key and value for react node
+Other,Uncategorized,Display value 0 for text
+Other,Uncategorized,Render in portrait mode
+Other,Uncategorized,Render in landscape mode
+Other,Uncategorized,Resize window from portrait to landscape
+Other,Uncategorized,Render in portrait mode
+Other,Uncategorized,Render in landscape mode
+Other,Uncategorized,Resize window from portrait to landscape
+Other,Uncategorized,Process answer from event with a matching eventId
+Other,Uncategorized,Ignore an answer from an event with a different eventId
+Other,Uncategorized,Render bracket
+Other,Uncategorized,Log event and send event to handler
+Other,Uncategorized,Log event and send event to handler with default attributes
+Other,Uncategorized,Display radio buttons
+Other,Uncategorized,Disable one of the radio buttons
+Other,Uncategorized,Renders the text input
+Other,Uncategorized,Renders the text input with text options
+Other,Uncategorized,Show clear button on focus and clear contents when clicked
+Other,Uncategorized,Display text input and and handle edit
+Other,Uncategorized,Display text input for number and handle edit edit
+Other,Uncategorized,Handle onClick when clicked
+Other,Uncategorized,Not be clickable when disabled
+Other,Uncategorized,Renders RichTextEditor with initial value
+Other,Uncategorized,Calls onChange when content changes
+Other,Uncategorized,Preserve existing http:// URLs
+Other,Uncategorized,Preserve existing https:// URLs
+Other,Uncategorized,Handle URLs with www prefix
+Other,Uncategorized,Convert email addresses to mailto links
+Other,Uncategorized,Handle email addresses with subdomains
+Other,Uncategorized,Handle email addresses with special characters
+Other,Uncategorized,Not convert invalid URLs to links
+Other,Uncategorized,Not convert invalid email addresses to links
+Other,Uncategorized,Handle multiple links in the same text
+Other,Uncategorized,Add target=
+Other,Uncategorized,Renders RichTextEditorField with initial value
+Other,Uncategorized,Displays error message when there is an error
+Other,Uncategorized,Render the bold button
+Other,Uncategorized,Render the italic button
+Other,Uncategorized,Render the underline button
+Other,Uncategorized,Show inactive state when text is not formatted
+Other,Uncategorized,Render the link button
+Other,Uncategorized,Show link editor when clicked
+Other,Uncategorized,Remove link when URL is cleared
+Other,Uncategorized,Handle invalid URLs
+Other,Uncategorized,Render the unordered list button
+Other,Uncategorized,Render the ordered list button
+Other,Uncategorized,Remove an unordered list
+Other,Uncategorized,Remove an ordered list
+Other,Uncategorized,Show inactive state when no list is selected
+Other,Uncategorized,Render the toolbar with all formatting buttons
+Other,Uncategorized,Render buttons with correct icons
+Other,Uncategorized,Render buttons with correct styling
+Other,Uncategorized,Display switch and emit when changed
+Other,Uncategorized,Display text input and and handle edit
+Other,Uncategorized,Display text input for number and handle edit edit
+Other,Uncategorized,Renders the text input
+Other,Uncategorized,Renders the text input with text options
+Other,Uncategorized,Show clear button on focus and clear contents when clicked
+Other,Uncategorized,Sanitize whole number
+Other,Uncategorized,Sanitize decimal number
+Other,Uncategorized,Sanitize decimal number to specific number of decimal places
+Other,Uncategorized,Sanitize decimal number when number of decimal places is set to 0
+Other,Uncategorized,Render correctly
+Other,Uncategorized,Display selected answer correctly
+Other,Uncategorized,Select answer on click
+Other,Uncategorized,Render as disabled
+UI Components,Other UI Components,Log event on answer change
+UI Components,Other UI Components,Process start info and change status to started
+UI Components,Other UI Components,Set questions optional on cancel
+UI Components,Other UI Components,Set questions required when not cancelled
+UI Components,Other UI Components,Set questions optional on cancel when no tag
+UI Components,Other UI Components,Set questions required when not cancelled when no tag
+UI Components,Other UI Components,Launch spirometry editor with request values
+UI Components,Other UI Components,Expose spirometry response via hook when response event matches
+UI Components,Other UI Components,Launch barcode editor
+UI Components,Other UI Components,Process barcode answer from event when on iOS
+UI Components,Other UI Components,Launch dee editor
+UI Components,Other UI Components,Launch dee editor with existing images
+UI Components,Other UI Components,Process dee answer from event when on iOS
+UI Components,Other UI Components,Launch medications editor for a new medication
+UI Components,Other UI Components,Launch medications editor for an existing medication
+UI Components,Other UI Components,Generate pages and paths
+UI Components,Other UI Components,Exclude pageGroups and pages with no visible children
+UI Components,Other UI Components,Return selected page link;
+UI Components,Other UI Components,Return selected page link with next visible page
+UI Components,Other UI Components,Scrolls into view and focuses
+UI Components,Other UI Components,Returns contents answer id by tag name
+UI Components,Other UI Components,Returns undefined if tag is not found
+UI Components,Other UI Components,Throws error if tag is found but does not have an answer id
+UI Components,Other UI Components,Returns null when there are no conflicts
+UI Components,Other UI Components,Renders rows when conflicts exist
+UI Components,Other UI Components,Closes when clicking on the overlay
+UI Components,Other UI Components,Does not close when clicking inside the dialog content
+UI Components,Other UI Components,Renders empty-state text when no conflicts are present
+UI Components,Other UI Components,Renders titles and links
+UI Components,Other UI Components,Omits links when page ids are missing
+UI Components,Other UI Components,Renders separator when shouldRenderSeparator is true
+UI Components,Other UI Components,Does not render separator when shouldRenderSeparator is false
+UI Components,Other UI Components,Renders nothing when both dates are missing
+UI Components,Other UI Components,Renders the last claim date when provided
+UI Components,Other UI Components,Renders the last signify date when provided
+UI Components,Other UI Components,Renders both dates when both are provided
+UI Components,Other UI Components,Renders nothing when rapidValidation is empty
+UI Components,Other UI Components,"Renders header, description, and diagnosis card"
+UI Components,Other UI Components,Shows date labels (Last Claim Date and Last Signify Date) and bullet separator when dates are provided
+UI Components,Other UI Components,Renders ContentWriter when content.rapidValidation.item is present
+UI Components,Other UI Components,Does not render ContentWriter when content.rapidValidation.item is missing
+UI Components,Other UI Components,Renders nothing when there are no attestations
+UI Components,Other UI Components,Renders header and a PageLink for each attestation
+UI Components,Other UI Components,Renders label and
+UI Components,Other UI Components,Renders nothing when no managedBy and no follow-up values
+UI Components,Other UI Components,Renders managedBy and recommendedFollowUp when provided
+UI Components,Other UI Components,Renders diagnosis name
+UI Components,Other UI Components,Shows Confirmed status when confirmed
+UI Components,Other UI Components,Shows Not Confirmed status when not confirmed
+UI Components,Other UI Components,Renders the component with the correct text
+UI Components,Other UI Components,Generates the correct URL
+UI Components,Other UI Components,Has the correct aria-label for accessibility
+UI Components,Page Components,Render
+UI Components,Page Components,Render evaluation resolution center on last page if there are required questions
+UI Components,Page Components,Not render evaluation resolution center on last page if there are no required questions
+UI Components,Other UI Components,Render footer with next page
+UI Components,Other UI Components,Return contentId at top of page
+UI Components,Other UI Components,Render footer with stop face to face button
+UI Components,Other UI Components,Render footer with finalize button
+UI Components,Other UI Components,Render footer in finalized status without button
+UI Components,Other UI Components,Render start face to face button if not started and is iOS
+UI Components,Other UI Components,"Render transcribe face to face button if not started, is transcription, and is iOS"
+UI Components,Other UI Components,Render training mode banner
+UI Components,Other UI Components,"Not render notes, flag, review if status is finalized"
+UI Components,Other UI Components,Renders the Notes icon and legend
+UI Components,Other UI Components,Renders the Flag icon and legend
+UI Components,Other UI Components,Renders the Review icon and legend
+UI Components,Other UI Components,Renders the selected flag icon when flagged
+UI Components,Other UI Components,Calls toggleFlag when the flag icon is clicked
+UI Components,Other UI Components,Renders the selected review icon when reviewed
+UI Components,Other UI Components,Calls toggleReview when the review icon is clicked
+UI Components,Other UI Components,Renders PageNotesCapture when notes are present and notesVisible is true
+UI Components,Other UI Components,Does not render PageNotesCapture when notes are not present
+UI Components,Other UI Components,Renders the modal with correctly
+UI Components,Other UI Components,Renders the textarea with initial value when provided
+UI Components,Other UI Components,Updates textarea value when user types
+UI Components,Other UI Components,Calls onSave with current value when Save button is clicked
+UI Components,Other UI Components,Calls onSave with empty string when no value is entered and Save button is clicked
+UI Components,Other UI Components,Clears textarea value when Clear button is clicked
+UI Components,Other UI Components,Calls onClose with current value when modal is dismissed
+UI Components,Other UI Components,Uses default testId when not provided
+UI Components,Other UI Components,Maintains textarea value after Clear button is clicked and then new text is entered
+UI Components,Other UI Components,Calls onSave with the latest value after multiple changes
+UI Components,Other UI Components,Preserves initial value when neither Clear nor textarea change occurs
+UI Components,Other UI Components,Render correctly with section title and display content
+UI Components,Other UI Components,Render correctly with section titles with content using a ContentList
+UI Components,Other UI Components,Render hidden
+UI Components,Other UI Components,Render correctly with section title and display matrix component
+UI Components,Other UI Components,Render empty placeholder for section with ResolutionCenter display type
+UI Components,Other UI Components,Render empty placeholder for section with ConflictResolutionCenter display type
+UI Components,Other UI Components,Scroll into view
+UI Components,Other UI Components,Scroll to top
+UI Components,Other UI Components,Do nothing for no hash or scroll container
+UI Components,Other UI Components,Render correctly
+UI Components,Other UI Components,Renders the correct number of page group navigations
+UI Components,Other UI Components,Renders page group navigation with correct key
+UI Components,Other UI Components,Does not render any page group navigation if pageGroupLinks is empty
+UI Components,Other UI Components,Renders AccordionNavigation when feature flag is enabled
+UI Components,Other UI Components,Renders both page groups and both can be opened
+UI Components,Other UI Components,Render correctly and allow navigation
+UI Components,Other UI Components,Render correctly and style for selected group and page
+UI Components,Other UI Components,Render correctly and style with default values
+UI Components,Other UI Components,Renders the correct number of pages in the page container
+UI Components,Other UI Components,Does not render when the page group is not visible
+UI Components,Other UI Components,Render correctly and allow navigation
+UI Components,Other UI Components,Render correctly and style for selected group and page
+UI Components,Other UI Components,Render correctly and style with default values
+UI Components,Other UI Components,Renders the page group navigation with correct title and image
+UI Components,Other UI Components,Renders the correct number of pages in the page container
+UI Components,Other UI Components,Does not render when the page group is not visible
+UI Components,Other UI Components,Renders the page title correctly
+UI Components,Other UI Components,Does not render when the page is not visible
+UI Components,Other UI Components,Navigates to the correct path when clicked
+UI Components,Other UI Components,Applies the correct color style when the page is selected
+UI Components,Other UI Components,Applies the correct hover color style when the page is not selected
+UI Components,Other UI Components,Applies the correct class when the page is flagged
+UI Components,Other UI Components,Applies the correct class when the page is reviewed
+UI Components,Other UI Components,Renders the page title correctly
+UI Components,Other UI Components,Does not render when the page is not visible
+UI Components,Other UI Components,Navigates to the correct path when clicked
+UI Components,Other UI Components,Applies the correct class when the page is flagged
+UI Components,Other UI Components,Applies the correct class when the page is reviewed
+UI Components,Other UI Components,Render correctly for unselected
+UI Components,Other UI Components,Render correctly for selected and 404 image
+UI Components,Other UI Components,Render correctly for found source
+UI Components,Other UI Components,Render correctly for source not found
+UI Components,Other UI Components,Render
+UI Components,Other UI Components,Render disabled
+UI Components,Other UI Components,Render link
+UI Components,Other UI Components,Render disabled
+UI Components,Other UI Components,Render disabled
+UI Components,Other UI Components,Render disabled if future appointment
+UI Components,Other UI Components,Trigger status change to started on click
+UI Components,Other UI Components,Trigger status change to stopped on click
+UI Components,Other UI Components,Render disabled if status is stopped and there are required questions
+UI Components,Other UI Components,"Trigger status change to finalized on click, and clear hidden answers"
+UI Components,Other UI Components,Render disabled if status is finalized
+UI Components,Matrix Components,Render default matrix
+UI Components,Matrix Components,Render dx validation display type
+UI Components,Matrix Components,Add new row
+UI Components,Matrix Components,Add new row then cancel
+UI Components,Matrix Components,Be able to delete on edit
+UI Components,Matrix Components,Not be able to delete on add
+UI Components,Other UI Components,Render confirmation modal as expected
+UI Components,Other UI Components,Only render confirmation modal when open
+UI Components,Other UI Components,Correct header text
+UI Components,Other UI Components,Handle cancel
+UI Components,Other UI Components,Handle modal dismiss
+UI Components,Other UI Components,Handle delete
+UI Components,Other UI Components,Render stringified field answer value
+UI Components,Other UI Components,Render required indicator if required and not answered
+UI Components,Other UI Components,Render dash if not required and not answered
+UI Components,Other UI Components,Render dash if not required and not empty
+UI Components,Other UI Components,Render matrix header and sub-headings
+UI Components,Other UI Components,"Render matrix body, rows and cells"
+UI Components,Other UI Components,Format matrix header
+UI Components,Other UI Components,Format matrix sub headers
+UI Components,Other UI Components,Format matrix body
+UI Components,Other UI Components,Fail to format matrix when no item rendering is present
+UI Components,Other UI Components,Render modal when isOpen is true
+UI Components,Other UI Components,Render ContentWriter components for each matrix item
+UI Components,Other UI Components,Display Add and Cancel buttons in footer
+UI Components,Other UI Components,Call onAdd when Add button is clicked
+UI Components,Other UI Components,Call onCancel when Cancel button is clicked
+UI Components,Other UI Components,Use default testId when not provided
+UI Components,Other UI Components,Use custom headerText when provided
+UI Components,Other UI Components,Display the provided headerText
+UI Components,Other UI Components,Handle empty matrix items gracefully
+UI Components,Other UI Components,Pass through modal size correctly
+UI Components,Other UI Components,Disable done button until all required questions are answered
+UI Components,Other UI Components,Disable delete button on new rows
+UI Components,Other UI Components,Disable delete button on rows that are pre-popped
+UI Components,Other UI Components,Open confirmation modal on delete and can confirm delete
+UI Components,Other UI Components,Open confirmation modal on delete and can cancel
+UI Components,Matrix Components,Be able to add a new row
+UI Components,Matrix Components,Be able to edit an existing row
+UI Components,Matrix Components,Render each row
+UI Components,Matrix Components,Be able to add or edit rows when readonly
+UI Components,Matrix Components,Sort rows alphabetically by header answer values
+UI Components,Other UI Components,Render matrix row
+UI Components,Other UI Components,Handle edit row
+UI Components,Other UI Components,Render correctly
+UI Components,Other UI Components,Render correctly
+UI Components,Other UI Components,Render correctly for second flag
+UI Components,Other UI Components,Show response dialog when x is clicked
+UI Components,Other UI Components,Allow user to enter skip reason
+UI Components,Other UI Components,Clear old answers when user skips
+UI Components,Other UI Components,Show navigate to question when edit button is clicked
+UI Components,Other UI Components,Render correctly
+UI Components,Other UI Components,Show message and link to resolution center if there are required questions
+UI Components,Other UI Components,Toggles the flag state correctly
+UI Components,Other UI Components,Handles toggleFlag when context is undefined
+UI Components,Other UI Components,Toggles the review status from false to true
+UI Components,Other UI Components,Toggles the review status from true to false
+State Management,Context Layer Tests,Render children when content document is provided
+State Management,Context Layer Tests,Handle minimal content document
+State Management,Context Layer Tests,Provide document context to children
+State Management,Context Layer Tests,Initialize with initialEvalAnswers
+State Management,Context Layer Tests,Handle empty initialEvalAnswers
+State Management,Context Layer Tests,Accept parsedContentDocument prop
+State Management,Context Layer Tests,Handle editDisabled prop set to true
+State Management,Context Layer Tests,Handle editDisabled prop set to false
+State Management,Context Layer Tests,Handle editDisabled default value
+State Management,Context Layer Tests,Accept additional contextLayers
+State Management,Context Layer Tests,Update when contentDocument changes
+State Management,Context Layer Tests,Update when initialEvalAnswers changes
+State Management,Context Layer Tests,Update when editDisabled changes
+State Management,Context Layer Tests,Return document context
+State Management,Context Layer Tests,Return default context when no provider
+State Management,Context Layer Tests,Return getContentByTag function
+State Management,Context Layer Tests,Return getContentsByTag function
+State Management,Context Layer Tests,Get first content by tag
+State Management,Context Layer Tests,Get all contents by tag
+State Management,Context Layer Tests,Return undefined for non-existent tag with getContentByTag
+State Management,Context Layer Tests,Return empty array for non-existent tag with getContentsByTag
+State Management,Context Layer Tests,Memoize getContentByTag function
+State Management,Context Layer Tests,Memoize getContentsByTag function
+State Management,Context Layer Tests,Work with empty contentByTag
+State Management,Context Layer Tests,Provide default context values
+State Management,Context Layer Tests,Provide parsed content structure
+State Management,Context Layer Tests,Create Redux store with layers
+State Management,Context Layer Tests,Initialize viewMetadata for content
+State Management,Context Layer Tests,Initialize viewMetadata with required field
+State Management,Context Layer Tests,Provides diagnosisValidation context to consumers
+State Management,Context Layer Tests,Provides supplementaryData context to consumers
+State Management,Context Layer Tests,Returns default values if no provider is used
+State Management,Context Layer Tests,Returns undefined supplementaryData if no provider is used
+State Management,Context Layer Tests,Returns undefined if supplementaryData is undefined in provider
+State Management,Context Layer Tests,Returns a search function that finds matching diagnoses
+State Management,Context Layer Tests,Performs case-insensitive search
+State Management,Context Layer Tests,Sorts results by index position and then alphabetically
+State Management,Context Layer Tests,Sorts alphabetically when search term appears at same index
+State Management,Context Layer Tests,Trims whitespace from search phrase
+State Management,Context Layer Tests,Returns empty array when no matches found
+State Management,Context Layer Tests,Returns empty array when search phrase is empty
+State Management,Context Layer Tests,Returns empty array when search phrase is only whitespace
+State Management,Context Layer Tests,Handles diagnoses with undefined or null names
+State Management,Context Layer Tests,Returns empty array for Medication data source
+State Management,Context Layer Tests,Returns empty array for PrimaryCareProvider data source
+State Management,Context Layer Tests,Returns a memoized function that changes when dependencies change
+State Management,Context Layer Tests,Returns same function reference when diagnosis data source does not change
+State Management,Context Layer Tests,Returns function that returns empty array when no provider is present
+State Management,Context Layer Tests,Exclude content from unanswered when parent content list unknown is true
+State Management,Context Layer Tests,Return visible unanswered required questions
+State Management,Context Layer Tests,Return medications question only if invalid
+State Management,Context Layer Tests,Include required content list and exclude its unanswered child when unknown is not checked
+State Management,Context Layer Tests,Not include required content list when all questions are answered and unknown is not checked
+State Management,Context Layer Tests,Return visible unanswered required questions for only the specified row
+State Management,Context Layer Tests,Return visible unanswered required questions for only the specified questions
+State Management,Context Layer Tests,Return answers for specified content IDs when prepopulated
+State Management,Context Layer Tests,Set multiple answers at once
+State Management,Context Layer Tests,Set multiple answers at once across rows
+State Management,Context Layer Tests,Clear specified answers for default row
+State Management,Context Layer Tests,Handle empty answers array
+State Management,Context Layer Tests,Handle answers with no value (force delete)
+State Management,Context Layer Tests,Force update when specified
+State Management,Context Layer Tests,Set answers for a specific row
+State Management,Context Layer Tests,Set answers for default row when rowId not specified
+State Management,Context Layer Tests,Set row answers with forceUpdate flag
+State Management,Context Layer Tests,Delete row when empty answers array is provided
+State Management,Context Layer Tests,Handle updating existing row answers
+State Management,Context Layer Tests,Clear all answers across all rows for specified content IDs
+State Management,Context Layer Tests,Clear all answers for multiple content IDs
+State Management,Context Layer Tests,Handle clearing answers for content with no existing answers
+State Management,Context Layer Tests,Clear all rows when content has multiple rows
+State Management,Context Layer Tests,Clear answers for a specific row while preserving other rows
+State Management,Context Layer Tests,Clear answers for multiple content IDs in specific row
+State Management,Context Layer Tests,Handle errors gracefully and log them
+State Management,Context Layer Tests,Return initial state when no answer exists
+State Management,Context Layer Tests,Return existing answer when prepopulated with initialEvalAnswers
+State Management,Context Layer Tests,Upsert answer and call onAnswer callback
+State Management,Context Layer Tests,Upsert multiple answers at once
+State Management,Context Layer Tests,Clear and set answer (overwrite)
+State Management,Context Layer Tests,Remove answer
+State Management,Context Layer Tests,Clear all answers
+State Management,Context Layer Tests,Include rowId when provided by RowIdProvider
+State Management,Context Layer Tests,Replace row answers
+State Management,Context Layer Tests,Track previous answer state
+State Management,Context Layer Tests,Return early when no content reference exists
+State Management,Context Layer Tests,Return matrix answers organized by row and content when prepopulated
+State Management,Context Layer Tests,Upsert entire row of answers
+State Management,Context Layer Tests,Remove entire row of answers
+State Management,Context Layer Tests,Handle non-existent matrix gracefully
+State Management,Context Layer Tests,Handle remove row when row does not exist
+State Management,Context Layer Tests,Return typed answer for specific answer type and ID
+State Management,Context Layer Tests,Upsert typed answer
+State Management,Context Layer Tests,Clear and set typed answer (overwrite)
+State Management,Context Layer Tests,Remove typed answer
+State Management,Context Layer Tests,Not update when answerId or answerType is missing
+State Management,Context Layer Tests,Track previous typed answer
+State Management,Context Layer Tests,Upsert answer context and select it
+State Management,Context Layer Tests,Delete answer context
+State Management,Context Layer Tests,Return undefined when selecting non-existent answer
+State Management,Context Layer Tests,Return undefined when no contentId provided
+State Management,Context Layer Tests,Handle errors gracefully when updateAnswer fails
+State Management,Context Layer Tests,Return correct initial values when contentId is provided
+State Management,Context Layer Tests,Return correct values when contentId is undefined
+State Management,Context Layer Tests,Return hasAnswer as false when answer is empty
+State Management,Context Layer Tests,Update previousAnswer when answer changes
+State Management,Context Layer Tests,Set row with provided answers
+State Management,Context Layer Tests,Handle empty answers array
+State Management,Context Layer Tests,Remove a single row
+State Management,Context Layer Tests,Remove multiple rows
+State Management,Context Layer Tests,Handle empty rowIds array
+State Management,Context Layer Tests,Return correct answer for existing rowId and answerId
+State Management,Context Layer Tests,Return undefined for non-existing rowId
+State Management,Context Layer Tests,Return undefined for non-existing answerId
+State Management,Context Layer Tests,Return undefined when answer is undefined
+State Management,Context Layer Tests,Return answer with correct type when specified
+State Management,Context Layer Tests,Overwrite answer with new values
+State Management,Context Layer Tests,Overwrite answer with new values
+State Management,Context Layer Tests,Handle undefined answer
+State Management,Context Layer Tests,Handle empty answer object
+State Management,Context Layer Tests,Call overwriteAnswer with undefined
+State Management,Context Layer Tests,Handle when onAnswer is undefined
+State Management,Context Layer Tests,Handle when contentReference is undefined
+State Management,Context Layer Tests,Handle when currentAnswer is undefined
+State Management,Context Layer Tests,Memoize answers array
+State Management,Context Layer Tests,Update answers array when answer changes
+State Management,Context Layer Tests,Add a single conflict and return its ID
+State Management,Context Layer Tests,Add multiple conflicts and return their IDs
+State Management,Context Layer Tests,Remove conflicts by IDs
+State Management,Context Layer Tests,Generate consistent IDs for the same set of answers
+State Management,Context Layer Tests,Upsert conflicts using layer actions directly
+State Management,Context Layer Tests,Delete conflicts using layer actions directly
+State Management,Context Layer Tests,"Return methods to hide, show, set required, set optional and reset required"
+State Management,Context Layer Tests,Include isRapidValidation and isRapidValidationAnswerId in returned content
+State Management,Context Layer Tests,Include all diagnosis content fields
+State Management,Context Layer Tests,Provide diagnosis context with default values when used outside provider
+State Management,Context Layer Tests,Render children and provide diagnosis context
+State Management,Context Layer Tests,Categorize diagnoses correctly
+State Management,Context Layer Tests,Categorize previously identified diagnoses with risk adjustable flag
+State Management,Context Layer Tests,Categorize previously identified diagnoses with 2+ attestations
+State Management,Context Layer Tests,Handle add Diagnosis and remove Diagnosis functions
+State Management,Context Layer Tests,Add new diagnoses when answers are added
+State Management,Context Layer Tests,Remove diagnoses when answers are changed
+State Management,Context Layer Tests,Add medication diagnoses
+State Management,Context Layer Tests,Remove diagnosis when not in use
+State Management,Context Layer Tests,Remove medication diagnoses
+State Management,Context Layer Tests,Create conflicts when diagnosis is managed by medication but no medication exists
+State Management,Context Layer Tests,Not create conflicts when diagnosis is managed by medication and medication exists
+State Management,Context Layer Tests,Create conflicts when confirmed diagnosis is not answered in diagnosis content
+State Management,Context Layer Tests,Remove conflicts when conditions change
+State Management,Context Layer Tests,Not create conflicts for unconfirmed diagnoses
+State Management,Context Layer Tests,Creates only one conflict for a symmetric diagnosis pair
+State Management,Context Layer Tests,Creates unique unordered conflicts for three diagnoses (nC2)
+State Management,Context Layer Tests,Dispatch ViewMetadata updates when diagnoses are categorized
+State Management,Context Layer Tests,Set rapid validation content as not visible for previously identified diagnoses
+State Management,Context Layer Tests,Set rapid validation content as visible for rapid validation diagnoses
+State Management,Context Layer Tests,Dispatch updates for multiple diagnoses with different visibility states
+State Management,Context Layer Tests,Not dispatch diagnosis-specific ViewMetadata updates when no diagnoses are present
+State Management,Context Layer Tests,Parse the document correctly
+State Management,Context Layer Tests,Map ContentList unknownOption to contentByAnswerId and contentById
+State Management,Context Layer Tests,Parse eval answers correctly
+State Management,Context Layer Tests,Preserve source property when parsing eval answers
+State Management,Context Layer Tests,Only clear answers for questions that are hidden
+State Management,Context Layer Tests,Only clear answers for questions that are under hidden sections
+State Management,Context Layer Tests,Return empty medications array when no answers exist
+State Management,Context Layer Tests,Return medications sorted by drug name when answers exist
+State Management,Context Layer Tests,Handle medications with undefined drug names in sorting
+State Management,Context Layer Tests,Add medication and call diagnosis update
+State Management,Context Layer Tests,Handle case when contentByAnswerId does not contain DrugName
+State Management,Context Layer Tests,Return undefined medication when no answers exist
+State Management,Context Layer Tests,Return medication when answers exist
+State Management,Context Layer Tests,Update medication and call diagnosis update
+State Management,Context Layer Tests,Remove medication and call diagnosis removal
+State Management,Context Layer Tests,Not remove medication when answersByAnswerId is undefined
+State Management,Context Layer Tests,Not remove medication when medication is undefined
+State Management,Context Layer Tests,Update medication state when answers change
+State Management,Context Layer Tests,Handle rowId changes
+State Management,Context Layer Tests,Return member object with null/undefined fields
+State Management,Context Layer Tests,It return first name and last name
+State Management,Context Layer Tests,Returns array of clinicians when data is present
+State Management,Context Layer Tests,Returns empty clinicians array if answers cannot be found
+State Management,Context Layer Tests,Returns empty clinicians array if firstName tag cannot be found
+State Management,Context Layer Tests,Returns empty clinicians array if lastName tag cannot be found
+State Management,Context Layer Tests,Return provider object with null/undefined fields
+State Management,Context Layer Tests,It return name and degree
+Common,Common Utilities,Display error messages
+Common,Common Utilities,Display passed error messages
+Common,Common Utilities,Display debug messages
+Common,Common Utilities,Display info messages
+Common,Common Utilities,Display warn messages
+Common,Common Utilities,Publish log events
+Common,Common Utilities,Add mime type to jpeg
+Common,Common Utilities,Add mime type to png
+Common,Common Utilities,Not add mine type to unknown format
+Common,Common Utilities,Return undefined for an undefined value
+Common,Common Utilities,Remove mime type
+Common,Common Utilities,Initialize contentType to SingleSelect on construction
+Common,Common Utilities,Convert to SingleSelect content and return possible answers
+Common,Common Utilities,Only return other content if there are no answers
+Common,Common Utilities,Convert to SingleSelect content and return empty array for possible answers if no answers or otherAnswer
+Common,Common Utilities,Convert to SingleSelect content and return possible answers including otherAnswer when otherAnswer present
+Common,Common Utilities,Initialize contentType to MultiSelect on construction
+Common,Common Utilities,Convert to MultiSelect content and return possible answers
+Common,Common Utilities,Convert to MultiSelect content and return empty array for possible answers if no answers or otherAnswer
+Common,Common Utilities,Convert to MultiSelect content and return possible answers including otherAnswer when otherAnswer present
+Common,Common Utilities,Get possible answers for table
+Common,Common Utilities,Convert to barcode content and return possible answers
+Common,Common Utilities,Convert to switch content and return possible answers
+Common,Common Utilities,Convert to text box content and return possible answers
+Common,Common Utilities,Convert to images content and return possible answers
+Common,Common Utilities,Not convert unknown content
+Common,Common Utilities,Convert all content
+Common,Common Utilities,Convert to address content
+Common,Common Utilities,Return all possible answers
+Common,Common Utilities,Return all possible answers with default dispaly text
+Common,Common Utilities,Convert to yesNo content and return possible answers
+Common,Common Utilities,Convert to yesNo content with other option and return possible answers
+Common,Common Utilities,Convert to blood pressure content and return possible answers
+Common,Common Utilities,Convert to date content
+Common,Common Utilities,Return possible answers for full date
+Common,Common Utilities,Return possible answers
+Common,Common Utilities,Convert to medications content and return possible answers
+Common,Common Utilities,Convert to signature content and return possible answers
+Common,Common Utilities,Convert to DataSearch content and return possible answers
+Common,Common Utilities,Handle DataSearch with single answer
+Common,Common Utilities,Handle DataSearch with no answers
+Common,Common Utilities,Have correct dataBindings structure
+Common,Common Utilities,Handle empty dataBindings
+Common,Common Utilities,Return correct possible answer structure
+Common,Common Utilities,Return empty array as default value
+Common,Common Utilities,Use the correct answerId
+Common,Common Utilities,Convert to NumericTextBox content and return possible answer
+Common,Common Utilities,Create a document instance
+Common,Common Utilities,Convert dto to medications answer
+Common,Common Utilities,Convert medication to dto
+API Services,Groups Service,Return groups from useQueryGroups
+API Services,Groups Service,Return null from useQueryGroup if no groupId was passed
+API Services,Groups Service,Return group from useQueryGroup with groupId param
+API Services,Groups Service,Create a group from useCreateGroup using CreateGroupVariables params
+API Services,Groups Service,Creates a section successfully with annotation
+API Services,Groups Service,Creates a section without annotation
+API Services,Groups Service,Edit a group from useEditGroup using EditGroupVariable params
+API Services,Dx Service,Fetch and return diagnosis data when enabled
+API Services,Dx Service,Not fetch when enabled is false
+API Services,Documents Service,Return documents from useQueryDocuments
+API Services,Documents Service,Return undefined and not send request if no documentId was passed for useDocumentQuery
+API Services,Documents Service,Return null from useQueryDocumentLifecycleNotes if no documentId was passed
+API Services,Documents Service,Return notes from useQueryDocumentLifecycleNotes
+API Services,Documents Service,Return document from useQueryDocument with documentId param
+API Services,Documents Service,Return validation result as failed from useQueryDocumentValidations
+API Services,Documents Service,Change document lifecycle using useEditDocumentLifecycle
+API Services,Documents Service,Return undefined from useQueryPreviouslyPublishedVersion if no documentId was passed
+API Services,Documents Service,Return republish version from useQueryPreviouslyPublishedVersion with documentId param
+Rules Engine,Table Rules,Action on medications rule with intersect logic
+Rules Engine,Table Rules,Not action on medications rule with intersect logic if medication found but not in use
+Rules Engine,Table Rules,Not action on medications rule with intersect logic if medication is not found
+Rules Engine,Table Rules,Action on medications rule with simple logic (no intersect or union)
+Rules Engine,Table Rules,Not action on medications rule with simple logic (no intersect or union)
+Rules Engine,Table Rules,Action on medications rule with union logic if medication found in use
+Rules Engine,Table Rules,Action on medications rule with union logic if medication with chosen diagnoses is found
+Rules Engine,Table Rules,Not action on medications rule with union logic
+Rules Engine,Table Rules,Action on medications rule with complex logic (nested intersect and union) with entered diagnoses
+Rules Engine,Table Rules,Action on medications rule with complex logic with count operand with entered diagnoses
+Rules Engine,Table Rules,Action on medications rule with complex logic (nested intersect and union) with chosen diagnoses
+Rules Engine,Table Rules,Not action on medications rule with complex logic due to missing still in use
+Rules Engine,Table Rules,Not action on medications rule with complex logic due to missing both diagnoses
+Rules Engine,Table Rules,Action on complex rule for clinicians
+Rules Engine,Table Rules,"Not action on complex rule for clinicians, because intersect is not satisfied"
+Rules Engine,Table Rules,Action on complex table rule with AND logic
+Rules Engine,Table Rules,"Not action on complex table rule with AND logic, because AND is not satisfied"
+Rules Engine,Required Field Rules,Set question as required when rule condition is true
+Rules Engine,Required Field Rules,Unset question as required when rule condition is false
+Rules Engine,Other Rules,Set answer id
+Rules Engine,Other Rules,Unset answer id
+Rules Engine,Other Rules,Set Urgent CM for low sugar with only partially complete answers
+Rules Engine,Other Rules,Set Urgent CM for low sugar with only partially complete answers and overwrite manual entry
+Rules Engine,Other Rules,Set question visible
+Rules Engine,Other Rules,Not set question visible when input is hidden
+Rules Engine,Other Rules,Set question hidden
+Rules Engine,Other Rules,Set section visible
+Rules Engine,Other Rules,Set section hidden
+Rules Engine,Other Rules,Set content list visible
+Rules Engine,Other Rules,Set content list hidden
+Rules Engine,Other Rules,Allow equals to satisfy on MultiSelect when multiple options are selected
+Rules Engine,Other Rules,Execute rule with condition using textbox
+Rules Engine,Other Rules,Execute visibility rule on blood pressure question
+Rules Engine,Other Rules,Set question visible if supplementary data contains product code
+Rules Engine,Other Rules,Not set question visible if supplementary data does not contain product code
+Rules Engine,Other Rules,Set question visible if supplementary data does not contains product code
+Rules Engine,Other Rules,Not set question visible if supplementary contain product code
+Rules Engine,Other Rules,Set BMI answer
+Rules Engine,Other Rules,Calculate Depression Subscale Score based on PHQ4 answers
+Rules Engine,Other Rules,Not calculate Depression Subscale Score if any PHQ4 answers are not provided
+Rules Engine,Other Rules,Run auto-calculate on single select using value overrides
+Rules Engine,Other Rules,Run auto-calculate where value overrides is missing override for selected answer
+Rules Engine,Other Rules,Calculate years smoked based on age quit smoking less than current age
+Rules Engine,Other Rules,Calculate years smoked based on age quit smoking not filled
+Rules Engine,Other Rules,Calculate years smoked based on age quit smoking answered but hidden
+Rules Engine,Other Rules,Run fallback if logic is false
+Rules Engine,Other Rules,Run fallback if logic is false for autoselect rule
+Rules Engine,Other Rules,Run fallback inside a fallback if logic is false
+Rules Engine,Other Rules,Copy answer
+Rules Engine,Conflict Rules,Show conflict for basic conflict rule
+Rules Engine,Conflict Rules,Resolve existing conflict for basic conflict rule
+Rules Engine,Other Rules,Returns TextAnswer for YesNo content type
+Rules Engine,Other Rules,Returns TextMultiAnswer for MultiSelect content type
+Rules Engine,Other Rules,Returns BooleanAnswer for Switch content type
+Rules Engine,Other Rules,Returns NumberAnswer for NumericTextBox content type
+Rules Engine,Other Rules,Returns ImagesAnswer for Images content type
+Rules Engine,Other Rules,Does not include source when source is not provided
+Rules Engine,Other Rules,Adds answers to conflictingAnswers list
+Rules Engine,Other Rules,Does not add an answer if it is already there
+Rules Engine,Other Rules,Does not add an answer missing an id
+Rules Engine,Other Rules,Does not add answers if result was false
+Rules Engine,Other Rules,Returns ResolveConflict action when result is false
+Rules Engine,Other Rules,Returns ShowConflict action with conflictingAnswers when result is true and there are at least two
+Rules Engine,Other Rules,Throws an error if result is true but only one conflicting answer
+Other,Uncategorized,Render correctly with userAgent ContextWriter/iOS
+Other,Uncategorized,Move from started to stopped status
+Other,Uncategorized,Move from stopped to finalized status
+Other,Uncategorized,Process data
+Other,Uncategorized,Send new answer values to web-to-native api
+Other,Uncategorized,Send new answer value and null previous answer to web-to-native api
+Other,Uncategorized,Send updated answer value to web-to-native api
+Other,Uncategorized,Send updated number answer value to web-to-native api
+Other,Uncategorized,Send boolean answer value to web-to-native api
+Other,Uncategorized,Send false boolean answer value as undefined to web-to-native api
+Other,Uncategorized,Send date answer value in ISO format to web-to-native api
+Other,Uncategorized,Send null date answer value as undefined to web-to-native api
+Other,Uncategorized,Send image answer value without mime type to web-to-native api
+Other,Uncategorized,Send null image answer value as undefined to web-to-native api
+Other,Uncategorized,Send text list answer value as formatted string to web-to-native api
+Other,Uncategorized,Send empty text list answer value as undefined to web-to-native api
+Other,Uncategorized,Send new answer and null out the deleted answer web-to-native api
+Other,Uncategorized,Send null answer when single select has been unchecked to web-to-native api
+Other,Uncategorized,Send answer with legacy questionId for cleared answer to web-to-native api
+Other,Uncategorized,Send answer with legacy questionId for new answer to web-to-native api
+Other,Uncategorized,Send answer with legacy questionId for changed answer to web-to-native api
+Other,Uncategorized,Handle default case for unknown answer type to web-to-native api
+Other,Uncategorized,Create answers from bindings without source
+Other,Uncategorized,Create answers from bindings with source
+Other,Uncategorized,Create answers from bindings with mixed source and no source
+Other,Uncategorized,Send error from a try catch to web-to-native api
+Other,Uncategorized,Catch error with error boundarys
+Other,Uncategorized,Publish the Init App Event
+Other,Uncategorized,Publish the Error Event
+Other,Uncategorized,Publish the Update Complete Event
+Other,Uncategorized,Publish the Update Failed Event
+Other,Uncategorized,Publish the Attempt to Change Status Event
+Other,Uncategorized,Publish the Status Changed Event
+Other,Uncategorized,Publish the Question Request Event
+Other,Uncategorized,Publish the Answers Event
+Other,Uncategorized,Publish the Clarification Skip Reason Event
+Other,Uncategorized,Publish the Page Flag Event
+Other,Uncategorized,Publish the Page Reviewed Event
+Other,Uncategorized,Publish the Analytics Event
+Other,Uncategorized,Publish the Close Event
+Other,Uncategorized,Publish log event
+Content Management,Other E2E Tests,Navigate to the home page
+Content Management,Other E2E Tests,Navigate to the content library page
+Content Management,Other E2E Tests,Navigate to the preview page
+Content Management,Other E2E Tests,Navigate to the history page
+Content Management,Other E2E Tests,Navigate to the admin page
+Content Management,Other E2E Tests,Create a switch question
+Content Management,Other E2E Tests,Create a switch question with a diagnosis
+Content Management,Other E2E Tests,Add and remove diagnosis from switch
+Content Management,Other E2E Tests,Edit a switch question
+Content Management,Other E2E Tests,Edit a switch question with diagnosis
+Content Management,Other E2E Tests,Display concurrent user error for the content
+Content Management,Other E2E Tests,Create a barcode question
+Content Management,Other E2E Tests,Edit a barcode question
+Content Management,Other E2E Tests,Edit a barcode question with old validation format
+Content Management,Other E2E Tests,Create a blood pressure question
+Content Management,Other E2E Tests,Show preview when required fields are filled in
+Content Management,Other E2E Tests,Show error when systolic min is greater than or equal to max (create)
+Content Management,Other E2E Tests,Show error when diastolic min is greater than or equal to max (create)
+Content Management,Other E2E Tests,Show error in preview when systolic or diastolic value is out of range
+Content Management,Other E2E Tests,Show required star in preview when Required is enabled
+Content Management,Other E2E Tests,Hide SYS and DIA inputs in preview when Read Only is enabled
+Content Management,Other E2E Tests,Edit a blood pressure question and save as draft
+Content Management,Other E2E Tests,Update blood pressure question after draft save and edit
+Content Management,Other E2E Tests,Show error when systolic min is greater than or equal to max (edit)
+Content Management,Other E2E Tests,Show error when diastolic min is greater than or equal to max (edit)
+Content Management,Other E2E Tests,Load content library when there is no content
+Content Management,Other E2E Tests,Load content library with contents
+Content Management,Other E2E Tests,Search content library
+Content Management,Other E2E Tests,Search content library and return results
+Content Management,Other E2E Tests,Render hierarchy link for the content with section > page > pagegroup > document
+Content Management,Other E2E Tests,Render hierarchy link for the content with section > page
+Content Management,Other E2E Tests,Render missing location with no hierarchy link
+Content Management,Other E2E Tests,Create a table content
+Content Management,Other E2E Tests,Edit table to add column
+Content Management,Other E2E Tests,Create a date question with a single answer id
+Content Management,Other E2E Tests,Create a date question with 2 answer ids
+Content Management,Other E2E Tests,Create a date question with MM/YYYY format
+Content Management,Other E2E Tests,Create a date question with
+Content Management,Other E2E Tests,Edit a date question
+Content Management,Other E2E Tests,Edit a date question with an unknown answer
+Content Management,Other E2E Tests,Create a text box question
+Content Management,Other E2E Tests,Edit a text box question
+Content Management,Other E2E Tests,Create a yes no question
+Content Management,Other E2E Tests,Create a yes no question with diagnosis
+Content Management,Other E2E Tests,Add and remove a diagnosis from yes no
+Content Management,Other E2E Tests,Edit a yes no question
+Content Management,Other E2E Tests,Edit diagnoses on a yes no
+Content Management,Other E2E Tests,Preview a yes no question
+Content Management,Other E2E Tests,Create a numeric text box question
+Content Management,Other E2E Tests,Edit a numeric text box question
+Content Management,Other E2E Tests,Create Single Select
+Content Management,Other E2E Tests,Create Single Select with diagnoses
+Content Management,Other E2E Tests,Add and remove diagnoses
+Content Management,Other E2E Tests,Edit Single Select
+Content Management,Other E2E Tests,Edit Single Select with diagnoses
+Content Management,Other E2E Tests,Edit Single Select: Segmented controls
+Content Management,Other E2E Tests,Edit Single Select: Clear answers
+Content Management,Other E2E Tests,Create a multi select content with a multi column display type
+Content Management,Other E2E Tests,Create a multi select content with Other and None answers and mutli column display type
+Content Management,Other E2E Tests,Create a multi select content with Other answer and single column display type
+Content Management,Other E2E Tests,Create a multi select content and add diagnoses to answers
+Content Management,Other E2E Tests,Add and remove diagnoses from multiselect
+Content Management,Other E2E Tests,Edit multi select question
+Content Management,Other E2E Tests,Edit multi select question with diagnoses
+Content Management,Other E2E Tests,Edit multi select question with a other option
+Content Management,Other E2E Tests,Create a signature question
+Content Management,Other E2E Tests,Edit a signature question
+Content Management,Other E2E Tests,Display missing location and warning icon for pagegroup without parents
+Content Management,Other E2E Tests,Display location tab with Document hierarchy and navigate correctly
+Content Management,Other E2E Tests,Display Document hierarchy link in the page-group card and navigate correctly
+Content Management,Other E2E Tests,Edit pagegroup without parents as draft
+Content Management,Other E2E Tests,Edit pagegroup with parents as draft
+Content Management,Other E2E Tests,Edit pagegroup with parents as ready
+Content Management,Other E2E Tests,Set document lifecycle status from test to draft when pagegroup is updated
+Content Management,Other E2E Tests,Set document lifecycle status from published to draft when pagegroup is updated
+Content Management,Other E2E Tests,Display concurrent user error for the group
+Content Management,Other E2E Tests,Create a page
+Content Management,Other E2E Tests,Save page with PageGroup > Document hierarchy as draft
+Content Management,Other E2E Tests,Save page with PageGroup > Document hierarchy as ready
+Content Management,Other E2E Tests,Display location tab with PageGroup > Document hierarchy and navigate correctly
+Content Management,Other E2E Tests,Save page with one hierarchy as draft
+Content Management,Other E2E Tests,Save page with one hierarchy as ready
+Content Management,Other E2E Tests,Display location tab with one hierarchy
+Content Management,Other E2E Tests,Display missing location and warning icon for page without parents
+Content Management,Other E2E Tests,Display hierarchy with PageGroup > Document in the group card and navigate correctly
+Content Management,Other E2E Tests,Display hierarchy with PageGroup in the group card and navigate correctly
+Content Management,Other E2E Tests,Display Missing Location in the group card and navigate correctly
+Content Management,Other E2E Tests,Disable content tab under edit side bar for containing disable tags constant
+Content Management,Other E2E Tests,Create a section
+Content Management,Other E2E Tests,Add a contentlist under a section
+Content Management,Other E2E Tests,Add a matrix under a section
+Content Management,Other E2E Tests,Edit a section and add matrix
+Content Management,Other E2E Tests,Edit a section and add contentlist
+Content Management,Other E2E Tests,Edit a section and reorder items
+Content Management,Other E2E Tests,Save section with partial hierarchy as draft
+Content Management,Other E2E Tests,Save section with partial hierarchy as draft and autopush fail with retry
+Content Management,Other E2E Tests,Save section with partial hierarchy as ready
+Content Management,Other E2E Tests,Save section with full hierarchy as draft
+Content Management,Other E2E Tests,Save section with full hierarchy as ready
+Content Management,Other E2E Tests,Display location tab with full hierarchy and navigate correctly
+Content Management,Other E2E Tests,Display location tab with partial hierarchy
+Content Management,Other E2E Tests,Display missing location and warning icon for section without parents
+Content Management,Other E2E Tests,Display full hierarchy links in the section card
+Content Management,Other E2E Tests,Display partial hierarchy link in the section card
+Content Management,Other E2E Tests,Display missing location in the section card
+Content Management,Other E2E Tests,Disable edit button for section with ResolutionCenter display type
+Content Management,Other E2E Tests,Disable edit button for section with ConflictResolutionCenter display type
+Content Management,Other E2E Tests,Enable edit button for normal section without special display type
+Content Management,Other E2E Tests,Add page group to document
+Content Management,Other E2E Tests,Delete page group from document
+Content Management,Other E2E Tests,Load document library when there is no documents
+Content Management,Other E2E Tests,Load document library with documents
+Content Management,Other E2E Tests,Load documents filtered by search criteria
+Content Management,Other E2E Tests,Display concurrent user error for the document
+Content Management,Other E2E Tests,Create a question as draft
+Content Management,Other E2E Tests,Edit draft question and save as draft
+Content Management,Other E2E Tests,Edit draft question and save as ready
+Content Management,Other E2E Tests,Edit ready question and save as draft with path till section level
+Content Management,Other E2E Tests,Edit ready question and save as draft with path till section level and autopush fail with retry
+Content Management,Other E2E Tests,Edit ready question and save as ready with path till document level
+Content Management,Other E2E Tests,Edit ready question and save as ready with document in Published state
+Content Management,Other E2E Tests,Move document from draft to test
+Content Management,Other E2E Tests,Move document from test to published
+Content Management,Other E2E Tests,Fail validation when moving document with draft content
+Content Management,Other E2E Tests,Fail validation when moving document with missing rule reference in logic
+Content Management,Other E2E Tests,Fail validation when moving document with missing rule reference in action
+Content Management,Other E2E Tests,Fail validation when moving document with duplicate question IDs
+Content Management,Other E2E Tests,Fail validation when moving document with duplicate answer IDs
+Content Management,Other E2E Tests,Create a rule as draft
+Content Management,Other E2E Tests,Create a rule as ready
+Content Management,Other E2E Tests,Edit draft rule and save as draft
+Content Management,Other E2E Tests,Edit draft rule and save as ready
+Content Management,Other E2E Tests,Edit ready rule and save as draft
+Content Management,Other E2E Tests,Edit ready rule and save as ready
+Content Management,Other E2E Tests,Create simple conflict rule with two conditions
+Content Management,Other E2E Tests,Create auto-select rule to set answer
+Content Management,Other E2E Tests,Create visibility rule with two actions
+Content Management,Other E2E Tests,Create rule against supplementary data
+Content Management,Other E2E Tests,Create rule against table
+Content Management,Other E2E Tests,Create rule using text box
+Content Management,Other E2E Tests,Create rule using is answered operator
+Content Management,Other E2E Tests,Create simple required rule with two conditions
+Content Management,Other E2E Tests,Display concurrent user error for the rule
+Content Management,Other E2E Tests,Create and preview blood pressure rule using greater than
+Content Management,Other E2E Tests,Create and preview blood pressure rule using less than
+Content Management,Other E2E Tests,Create and preview blood pressure rule using is answered
+Content Management,Other E2E Tests,Edit and preview blood pressure rule
+Content Management,Other E2E Tests,Edit rule to add condition using AND
+Content Management,Other E2E Tests,Edit rule to add condition using OR
+Content Management,Other E2E Tests,Edit rule to remove condition
+Content Management,Other E2E Tests,Edit rule to remove action
+Content Management,Other E2E Tests,Edit rule to add nested condition
+Content Management,Other E2E Tests,Create auto-select rule with fallback
+Content Management,Other E2E Tests,Edit rule to add another fallback
+Content Management,Other E2E Tests,Edit rule to remove existing fallback
+Content Management,Other E2E Tests,Edit rule to remove inner fallback
+Content Management,Other E2E Tests,Load rules library when there is no rules
+Content Management,Other E2E Tests,Load rule library with rules
+Content Management,Other E2E Tests,Load rules filtered by search criteria
+Content Management,Other E2E Tests,Create rule to show content
+Content Management,Other E2E Tests,Create rule to hide content
+Content Management,Other E2E Tests,Create rule to show content list
+Content Management,Other E2E Tests,Create rule to hide content list
+Content Management,Other E2E Tests,Create rule to show section
+Content Management,Other E2E Tests,Create rule to hide section
+Content Management,Content Writers E2E,Render the question with its answers
+Content Management,Content Writers E2E,Select and deslect
+Content Management,Content Writers E2E,Switch answer from
+Content Management,Content Writers E2E,Select and deslect
+Content Management,Content Writers E2E,Switch answer from
+Content Management,Content Writers E2E,Select and deslect
+Content Management,Content Writers E2E,Render table with correct headings
+Content Management,Content Writers E2E,Allow you to add content to a table
+Content Management,Content Writers E2E,Allow you to add and edit content on a table
+Content Management,Content Writers E2E,Allow you to add and delete content on a table
+Content Management,Content Writers E2E,Render the question with its answers and other option
+Content Management,Content Writers E2E,Allow you to select one option and deselect it
+Content Management,Content Writers E2E,Allow you to select the other option
+Content Management,Content Writers E2E,Allow you to select the other option and then clear it
+Content Management,Content Writers E2E,"Display validation error when no other text is provided, only after blur"
+Content Management,Content Writers E2E,Clear validation error when another option gets selected
+Content Management,Content Writers E2E,Clear validation error when other text gets filled
+Content Management,Content Writers E2E,Have no validation error when no other text filled
+Content Management,Content Writers E2E,Display validation error when no other text is cleared
+Content Management,Content Writers E2E,Render the question and input
+Content Management,Content Writers E2E,Show error message when systolic input is less than required min value
+Content Management,Content Writers E2E,Show error message when systolic input is greater than required max value
+Content Management,Content Writers E2E,Show error message when diastolic input is less than required min value
+Content Management,Content Writers E2E,Show error message when diastolic input is greater than required max value
+Content Management,Content Writers E2E,Show error message when diastolic is greater than systolic
+Content Management,Content Writers E2E,Show error message when systolic and diastolic values are out of range
+Content Management,Content Writers E2E,Accept valid systolic and diastolic values
+Content Management,Content Writers E2E,Show error message when systolic value is 0
+Content Management,Content Writers E2E,Show error message when diastolic value is 0
+Content Management,Content Writers E2E,Render the question with its answers
+Content Management,Content Writers E2E,Allow you to turn switch on and off
+Content Management,Content Writers E2E,Add new row
+Content Management,Content Writers E2E,Remove newly added row on cancel
+Content Management,Content Writers E2E,Edit existing row
+Content Management,Content Writers E2E,Delete existing row
+Content Management,Content Writers E2E,Cancel deleting existing row
+Content Management,Content Writers E2E,Undo edits to existing row on cancel
+Content Management,Content Writers E2E,Not be able to add row on readonly matrix
+Content Management,Content Writers E2E,Render form correctly when clarifications provider is present
+Content Management,Content Writers E2E,Dispatch clarifications events without breaking form functionality
+Content Management,Content Writers E2E,Handle form state changes normally
+Content Management,Content Writers E2E,Render the question with its answers and other option
+Content Management,Content Writers E2E,Allow you to select one option and deselect it
+Content Management,Content Writers E2E,Allow you to select multiple options
+Content Management,Content Writers E2E,Allow you to select the other option
+Content Management,Content Writers E2E,Allow you to select the other option and then clear it
+Content Management,Content Writers E2E,"Display validation error when no other text is provided, only after blur"
+Content Management,Content Writers E2E,Not clear validation error when another option gets selected
+Content Management,Content Writers E2E,Clear validation error when other text gets filled
+Content Management,Content Writers E2E,Have no validation error when no other text filled
+Content Management,Content Writers E2E,Display validation error when no other text is cleared
+Content Management,Content Writers E2E,Allow you to select the none option
+Content Management,Content Writers E2E,Clear all other answers when none option is selected
+Content Management,Content Writers E2E,Clear none option when any other answer is selected
+Content Management,Content Writers E2E,Allow you to deselect the none option
+Content Management,Content Writers E2E,Validate present date
+Content Management,Content Writers E2E,Render the question and input
+Content Management,Content Writers E2E,Accept valid MM/YYYY input
+Content Management,Content Writers E2E,Show error for invalid MM/YYYY input
+Content Management,Content Writers E2E,Validate past date for Past/Present
+Content Management,Content Writers E2E,Render and accept MM/DD/YYYY format
+Content Management,Content Writers E2E,Allow unknown/uncertain answer if enabled
+Content Management,Content Writers E2E,Render the question with its answers
+Content Management,Content Writers E2E,Allow you to type into textbox
+Content Management,Content Writers E2E,Text box grow in size when there is a long piece of text
+Content Management,Content Writers E2E,Render the PCP Lookup component
+Content Management,Content Writers E2E,Display hint text when no providers are available
+Content Management,Content Writers E2E,Display PCP table headers
+Content Management,Content Writers E2E,Allow clicking the PCP Lookup button
+Content Management,Content Writers E2E,Verify helper methods work correctly
+Content Management,Content Writers E2E,Verify enhanced page object methods work correctly with no providers
+Content Management,Content Writers E2E,Demonstrate enhanced page object methods are implemented and working
+Content Management,Content Writers E2E,Render the signature question
+Content Management,Content Writers E2E,Clear the signature and remove the image
+Content Management,Content Writers E2E,Render ContentList with unknown checkbox when unknownOption is present
+Content Management,Content Writers E2E,Check unknown checkbox and save answer
+Content Management,Content Writers E2E,Uncheck unknown checkbox and clear answers
+Content Management,Content Writers E2E,Disable content items when unknown is checked
+Content Management,Content Writers E2E,Not render unknown checkbox when unknownOption is not present
+Content Management,Content Writers E2E,Render the numeric text box question with its input field
+Content Management,Content Writers E2E,Allow you to type into numeric textbox with value type as a Whole number
+Content Management,Content Writers E2E,Allow you to type into numeric textbox that has validations and a Decimal number type
+Content Management,Content Writers E2E,Render the question with scan button initially
+Content Management,Content Writers E2E,Show text input when scan button is clicked
+Content Management,Content Writers E2E,Allow you to enter barcode value directly
+Content Management,Content Writers E2E,Validate barcode length according to validation rules
+Content Management,Content Writers E2E,Accept valid barcode lengths
+Content Management,Content Writers E2E,Clear the barcode value when clear icon is clicked
+Content Management,Content Writers E2E,Accept non-numeric characters (charType validation not implemented)
+Content Management,Content Writers E2E,Show barcode icon when valid value is entered
+Content Management,Content Writers E2E,Handle edge case: exactly 9 characters (upper bound of first range)
+Content Management,Content Writers E2E,Reject invalid length: 10 characters (between valid ranges)
+Content Management,Content Writers E2E,Handle rapid input changes without race conditions
+Content Management,Content Writers E2E,Have pre populated answers for exam information section
+Content Management,Content Writers E2E,Have pre populated answers for member information section
+Content Management,Content Writers E2E,Have pre populated answers for pcp information section
+Content Management,Content Writers E2E,Have pre populated answers for diagnosis history section
+Content Management,Content Writers E2E,Have pre populated answers for medication section
+Content Management,Rules Testing,"If member has operational glucometer, show recent blood sugars"
+Content Management,Rules Testing,Select Urgent case management if blood sugar is below 60
+Content Management,Rules Testing,Select Urgent case management if blood sugar is above 400
+Content Management,Rules Testing,Select Urgent case management if blood sugar is below 60 and hide again when unanswered
+Content Management,Rules Testing,"ECGR product code applied, KED is available in Diagnostic Studies"
+Content Management,Rules Testing,Can both test be performed YES
+Content Management,Rules Testing,Can both the uACR and eGFR tests be performed? NO
+Content Management,Rules Testing,UACR test performed today?? NO
+Content Management,Rules Testing,EGFR test performed today?? NO
+Content Management,Rules Testing,Show questions for blood test performed
+Content Management,Rules Testing,Show reason for blood test not performed
+Content Management,Rules Testing,Show member refused blood test
+Content Management,Rules Testing,Show reason provider not perform blood test
+Content Management,Rules Testing,Show provider notes blood test
+Content Management,Content Writers E2E,"Auto calc BMI value when temperature, height and weight is answered"
+Content Management,Content Writers E2E,"Remove BMI value when temperature, height or weight is un answered"
+Content Management,Content Writers E2E,Show glucometer questions and stop navigation on invalid date
+Content Management,Content Writers E2E,Show glucometer questions and navigation on valid date
+Content Management,Content Writers E2E,Show glucometer questions and allow navigation when user hides question with error
+Content Management,Content Writers E2E,Show abnormal ocular finding when Abnormal is selected for ocular exam
+Content Management,Content Writers E2E,Hide abnormal ocular finding when Abnormal is selected then unselected
+Content Management,Rules Testing,"When med with diabetes mellitus is marked as in use, select yes for member has diabetes mellitus and medications as management"
+Content Management,Rules Testing,"If diabetes type is secondary, show cause of secondary diabetes"
+Content Management,Rules Testing,"If the member has diabetes, ask for type and management"
+Content Management,Rules Testing,"If diabetes is not being managed, ask if member has been advised to treat their diabetes"
+Content Management,Rules Testing,Set question as required
+Content Management,Rules Testing,Unset question as required
+Other,Uncategorized,Initialize mixpanel with correct token and user info
+Other,Uncategorized,Not initialize mixpanel if mixPanelToken is not provided
+Other,Uncategorized,Redirect root to questions
+Other,Uncategorized,Render library with questions list
+Other,Uncategorized,Render library with sections list
+Other,Uncategorized,Render library with pages list
+Other,Uncategorized,Render all main routes
+Other,Uncategorized,Render all library item routes
+Other,Uncategorized,Pass correct group type to sections route
+Other,Uncategorized,Pass correct group type to pages route
+Other,Uncategorized,Provide initial state with empty hoveredAnswerIds array
+Other,Uncategorized,Set hoveredAnswerIds when isHovered is true
+Other,Uncategorized,Clear hoveredAnswerIds when isHovered is false
+Other,Uncategorized,Handle multiple setHoveredAnswerIds calls correctly
+Other,Uncategorized,Track expanded items
+Other,Uncategorized,Renders children
+Other,Uncategorized,Calls onClick when clicked
+Other,Uncategorized,Does not call onClick when disabled
+Other,Uncategorized,Applies additional className
+Other,Uncategorized,Has correct default classes
+Other,Uncategorized,Call onClick after debounce delay
+Other,Uncategorized,Prevent multiple rapid clicks
+Other,Uncategorized,Use custom debounce delay
+Other,Uncategorized,Handle undefined onClick
+Other,Uncategorized,Renders the info icon
+Other,Uncategorized,Displays formatted creation date and user
+Other,Uncategorized,Displays formatted update date and user when lifecycle data is provided
+Other,Uncategorized,Handles missing lifecycle data
+Other,Uncategorized,Handles missing user IDs
+Other,Uncategorized,Render children without modal initially
+Other,Uncategorized,Show UnsavedChangesModal when triggered
+Other,Uncategorized,Show DefaultErrorModal when triggered
+Other,Uncategorized,Hide modal when hide is called
+Other,Uncategorized,Handle addActions correctly
+Other,Uncategorized,Throw error for invalid modal type
+Other,Uncategorized,Cleanup state on unmount
+Other,Uncategorized,Renders modal with correct header and description
+Other,Uncategorized,Calls onClose when Cancel is clicked
+Other,Uncategorized,Calls onAdd with selected diagnosis when Add is clicked
+Other,Uncategorized,Debounces search input and only searches after 2+ chars
+Other,Uncategorized,Not show modal when there are no unsaved changes
+Other,Uncategorized,Show modal when navigation is blocked and there are unsaved changes
+Other,Uncategorized,Handle continue action correctly
+Other,Uncategorized,Handle close action correctly
+Other,Uncategorized,Add reset action when reset is available
+Other,Uncategorized,Not add reset action when reset is not available
+Other,Uncategorized,Save Section as draft
+Other,Uncategorized,Edit Section as draft
+Other,Uncategorized,Edit Section with parents as draft
+Other,Uncategorized,Edit Section with parents as draft with partial hierarchy
+Other,Uncategorized,Edit Section with parents as ready
+Other,Uncategorized,Edit Section with parents as ready
+Other,Uncategorized,Render card for section
+Other,Uncategorized,Display heirarchy for content contained in section
+Other,Uncategorized,Render card for page
+Other,Uncategorized,Display heirarchy for content contained in Page
+Other,Uncategorized,Render card for page group
+Other,Uncategorized,Display heirarchy for content contained in Page group
+Other,Uncategorized,Display missing location if no herirachy is present
+Other,Uncategorized,Disable edit button for section with ResolutionCenter display type
+Other,Uncategorized,Disable edit button for section with ConflictResolutionCenter display type
+Other,Uncategorized,Render details for section
+Other,Uncategorized,Close the GroupSidebar modal
+Other,Uncategorized,Make the db to save new a group type
+Other,Uncategorized,Make the db to save new a group type with status draft
+Other,Uncategorized,Make the db to save new section on edit grouptype
+Other,Uncategorized,Render Section Name (Required) when group type set to section
+Other,Uncategorized,Render Section and submit form as draft
+Other,Uncategorized,Render Section with parents and submit form as draft
+Other,Uncategorized,Render Section and submit form as ready
+Other,Uncategorized,Render Page Name (Required) when group type set to page
+Other,Uncategorized,Render Page and submit form as draft
+Other,Uncategorized,Render Page with parents and submit form as draft
+Other,Uncategorized,Render Page with parents and submit form as ready
+Other,Uncategorized,Render PageGroup Name (Required) when group type set to page
+Other,Uncategorized,Render PageGroup and submit form as draft
+Other,Uncategorized,Render PageGroup and submit form as ready
+Other,Uncategorized,Render tabs for groupType page
+Other,Uncategorized,Render tabs for groupType section
+Other,Uncategorized,Render tabs for groupType pagegroups
+Other,Uncategorized,Disable content tab for Page when disable tag is present
+Other,Uncategorized,Disable content tab for Page when disable tag is not present
+Other,Uncategorized,Render Section Name (Required) when group type set to section
+Other,Uncategorized,Render Page Name (Required) when group type set to page
+Other,Uncategorized,Render PageGroup Name (Required) when group type set to page
+Other,Uncategorized,Render hint text and notes
+Other,Uncategorized,Renders hierarchy: page > pageGroup > document
+Other,Uncategorized,Partial Hierarchy - Tests with only page parent
+Other,Uncategorized,Page with PageGroup and Documents
+Other,Uncategorized,PageGroup with Documents
+Other,Uncategorized,Missing Location - Tests when no parents exist (shows
+Other,Uncategorized,Save Page as draft
+Other,Uncategorized,Edit Page with parents as draft
+Other,Uncategorized,Edit Page with parents as ready
+Other,Uncategorized,Save PageGroup as draft
+Other,Uncategorized,Edit PageGroup with parents as draft
+Other,Uncategorized,Edit PageGroup with parents as ready
+Other,Uncategorized,Render default error on unknown error
+Other,Uncategorized,Render conflicting group errors on rule create
+Other,Uncategorized,Not render notification when there is no error
+Other,Uncategorized,Show refresh button for concurrent edit errors
+Other,Uncategorized,Not show refresh button exceptions other than concurrent edit errors
+Other,Uncategorized,Call refresh callback and clear error message when refresh button clicked
+Other,Uncategorized,Not show refresh button for rule constraint errors
+Other,Uncategorized,Render error for ${name}
+Other,Uncategorized,Only show add items section after Add button is clicked
+Other,Uncategorized,Show added items in sortable list
+Other,Uncategorized,Show added section items in sortable list
+Other,Uncategorized,Show added page items in sortable list
+Other,Uncategorized,Remove item and undo
+Other,Uncategorized,"Remove item, then add item means you cannot undo last remove"
+Other,Uncategorized,Handle useQueryGroup with loading state
+Other,Uncategorized,Handle useQueryGroup with error state
+Other,Uncategorized,Properly handle useQueryGroup refetch functionality
+Other,Uncategorized,Add content to section
+Other,Uncategorized,Add section to page
+Other,Uncategorized,Add page to pageGroup
+Other,Uncategorized,Add matrix and content list under section
+Other,Uncategorized,Add button is disabled before items are selected
+Other,Uncategorized,Add button is enabled after items are selected
+Other,Uncategorized,Disable items that are already added
+Other,Uncategorized,Render Questions (0) when group not set
+Other,Uncategorized,Render Questions (2) when group with 2 pieces of Content set
+Other,Uncategorized,Render Sections (1) when page with 1 section set
+Other,Uncategorized,Render Child questions (14) when Matrix group with 14 items set
+Other,Uncategorized,"YesNo, Answers(2) be in page when resource is content"
+Other,Uncategorized,"Section Test, Questions(2) be in page when resource is Section"
+Other,Uncategorized,"Page Test, Sections (1) be in page when resource is Page"
+Other,Uncategorized,Expanded answers are tracked
+Other,Uncategorized,Add Question Header appear when contentId param set to create
+Other,Uncategorized,Set params to be called whenever we type the value
+Other,Uncategorized,Set params to be cleared when we delete text
+Other,Uncategorized,Set params to be cleared when we press clear icon
+Other,Uncategorized,Search input clear the on location change
+Other,Uncategorized,Question count appear
+Other,Uncategorized,Rules count appear
+Other,Uncategorized,Display no results when no results returned
+Other,Uncategorized,Display the filter by document dropdown
+Other,Uncategorized,Renders full hierarchy: section > page > pageGroup > document
+Other,Uncategorized,Renders only section parent
+Other,Uncategorized,Renders Missing Location when no parents
+Other,Uncategorized,Renders links for specified group types
+Other,Uncategorized,Render correctly
+Other,Uncategorized,Render after search
+Other,Uncategorized,Render without search
+Other,Uncategorized,Render edit button as enabled based on rule type and name
+Other,Uncategorized,Render edit button as disabled based on rule type and name
+Other,Uncategorized,Missing location if no parents are provided for a rule
+Other,Uncategorized,Render hierarchy for parents provided with a rule
+Other,Uncategorized,Create Rule Header appear when ruleId param set to create
+Other,Uncategorized,Edit Rule Header appear and fields be populated when ruleId param set to any UUID
+Other,Uncategorized,Render multiple actions for rules
+Other,Uncategorized,Actions already contains reference
+Other,Uncategorized,Actions does not contain reference
+Other,Uncategorized,Logic already contains reference
+Other,Uncategorized,Logic does not contain reference
+Other,Uncategorized,BuildNewConflictAction creates action with ShowConflict actionType
+Other,Uncategorized,Dropdown renders available answers under a question - YesNo
+Other,Uncategorized,Dropdown renders available answers under a question - Switch
+Other,Uncategorized,"Constant value can be set, when numeric only values are allowed"
+Other,Uncategorized,Constant value can be set
+Other,Uncategorized,Only render add control on single layer rule
+Other,Uncategorized,Render all controls on multi layer rule
+Other,Uncategorized,Add operand on click
+Other,Uncategorized,Remove operand on click
+Other,Uncategorized,Nest operand on click
+Other,Uncategorized,Render and properly enable all controls when using a set operator
+Other,Uncategorized,Disables all buttons for Conflict rule type
+Other,Uncategorized,Render separator for AND combined test rule operand
+Other,Uncategorized,Not render separator for conditional test rule operand
+Other,Uncategorized,Add new operand to parent operand
+Other,Uncategorized,Nest current and new operand under position of current operand
+Other,Uncategorized,Remove operand if multiple operands are in the same nest
+Other,Uncategorized,Remove nest if only one operand remains in nest
+Other,Uncategorized,"Bracket be visible, returns true"
+Other,Uncategorized,"Bracket be visible, returns false, is only one operand"
+Other,Uncategorized,"Bracket be visible, returns false, operand is not combinatory"
+Other,Uncategorized,Show
+Other,Uncategorized,Renders with filtered options for Conflict rule type
+Other,Uncategorized,Renders with all options for non-Conflict rule types
+Other,Uncategorized,Auto-select question type for new rule
+Other,Uncategorized,Select supplementary data type drop down
+Other,Uncategorized,Select supplementary data type for existing rule
+Other,Uncategorized,"Operand with reference id, operator and answer id"
+Other,Uncategorized,Render table question operand when table is selected
+Other,Uncategorized,Render the questions of content type blood pressure
+Other,Uncategorized,Render column dropdown and allow column selection
+Other,Uncategorized,Show unsupported column types as disabled
+Other,Uncategorized,Allow operator selection after column selection
+Other,Uncategorized,Render complex operands with multiple column conditions
+Other,Uncategorized,Render nested complex operands correctly
+Other,Uncategorized,Call addColumnOperand when add button is clicked
+Other,Uncategorized,Call removeColumnOperand when removing from complex operand
+Other,Uncategorized,Simplify to a single operand when removing second-to-last operand
+Other,Uncategorized,Call nestColumnOperand when nest button is clicked
+Other,Uncategorized,Render column dropdown and allow column selection
+Other,Uncategorized,Allow operator selection after column selection
+Other,Uncategorized,Reference operand with answer id is rendered
+Other,Uncategorized,Is answered operand doesnt render constant value creator
+Other,Uncategorized,Prefill values for existing rule
+Other,Uncategorized,Select operator and product codes
+Other,Uncategorized,Render selected product codes
+Other,Uncategorized,Select new product code
+Other,Uncategorized,Unselect existing product code
+Other,Uncategorized,Only render clear all option if codes are selected
+Other,Uncategorized,Clear all selected product codes
+Other,Uncategorized,Constrain selected values display to 90% width
+Other,Uncategorized,Render dropdown with one option selected
+Other,Uncategorized,Render dropdown with multiple options selected
+Other,Uncategorized,Renders RuleSection with SubOperandCreator when statement.logic is present
+Other,Uncategorized,Renders RuleActions with the correct actions
+Other,Uncategorized,Renders nested RuleStatement in RuleSection when statement.fallback is present
+Other,Uncategorized,Renders only one
+Other,Uncategorized,Clicking
+Other,Uncategorized,Clicking remove fallback button removes the fallback and replaces with inner fallback
+Other,Uncategorized,Clicking remove fallback button removes the fallback
+Other,Uncategorized,Does not render
+Other,Uncategorized,Action cannot be removed if canRemove is false
+Other,Uncategorized,Can add after an action
+Other,Uncategorized,Can remove an action
+Other,Uncategorized,Render visibility action
+Other,Uncategorized,Render auto select actions
+Other,Uncategorized,Disables add button for Conflict rule type
+Other,Uncategorized,Render populated visibility action referencing content
+Other,Uncategorized,Render populated visibility action referencing section
+Other,Uncategorized,Render populated visibility action referencing content list
+Other,Uncategorized,Render empty visibility action
+Other,Uncategorized,Render populated required action referencing content
+Other,Uncategorized,Render empty required action
+Other,Uncategorized,Render populated auto-select action
+Other,Uncategorized,Render empty auto-select action
+Other,Uncategorized,Updates action value when action ID changes
+Other,Uncategorized,Render
+Other,Uncategorized,Render
+Other,Uncategorized,Render
+Other,Uncategorized,Remove section when icon is clicked
+Other,Uncategorized,Render without separator
+Other,Uncategorized,"Render without separator, but with bracket"
+Other,Uncategorized,"Types not supported by rules get disabled, if checked"
+Other,Uncategorized,Must have a rule name
+Other,Uncategorized,Must have a rule name of at least 3 characters
+Other,Uncategorized,Must have a rule type
+Other,Uncategorized,Must have logic
+Other,Uncategorized,Must have rule actions
+Other,Uncategorized,Must have at least one rule action
+Other,Uncategorized,Logic must have an operand type
+Other,Uncategorized,"Logic must have an operator type, when of type operand"
+Other,Uncategorized,Constant operand must have a value
+Other,Uncategorized,Reference operand must have a reference
+Other,Uncategorized,Reference must have an id
+Other,Uncategorized,Reference must have a type
+Other,Uncategorized,Operand must have an operator
+Other,Uncategorized,Operand must have operands
+Other,Uncategorized,Operand must have at least one operand
+Other,Uncategorized,Operand can only have one reference operand (without answer id)
+Other,Uncategorized,Action must have a type
+Other,Uncategorized,SetValue action must have a value
+Other,Uncategorized,SetAnswerId action must have a value
+Other,Uncategorized,SetVisibleQuestion action can have null reference
+Other,Uncategorized,Scopes are required
+Other,Uncategorized,At least one scope required
+Other,Uncategorized,Valid supplementary data rule
+Other,Uncategorized,Supplementary data rule must have type filled
+Other,Uncategorized,Contains operator requires at least one value
+Other,Uncategorized,Combining operators must only have operand types operand
+Other,Uncategorized,Set operators must only have operand type operands
+Other,Uncategorized,Column operators must not have operand type operands
+Other,Uncategorized,"Rule with a fallback (with logic, actions, and inner fallback) is valid"
+Other,Uncategorized,Rule with a fallback whose inner fallback is missing actions is invalid
+Other,Uncategorized,Requires logic for Conflict rule type with ShowConflict action
+Other,Uncategorized,ShowConflict actions with references still require logic
+Other,Uncategorized,Requires logic for non-Conflict rule types
+Other,Uncategorized,Requires logic for Conflict rule type without ShowConflict action
+Other,Uncategorized,Render card for document
+Other,Uncategorized,Edit Form Header appear when documentId param set to edit
+Other,Uncategorized,Save document on edit
+Other,Uncategorized,Render Form Name (Required) when document type is set to Form
+Other,Uncategorized,Render Form Name (Required) when document type set to Form
+Other,Uncategorized,Render tabs for Form document
+Other,Uncategorized,Render details for document
+Other,Uncategorized,Returns correct breadcrumbs for add new content [Date]
+Other,Uncategorized,Returns correct breadcrumbs for edit new content [Date]
+Other,Uncategorized,Load children
+Other,Uncategorized,Call create content on save
+Other,Uncategorized,Call edit content when content is available and has been saved
+Other,Uncategorized,Only call edit content once if button is double clicked
+Other,Uncategorized,Show error message when content creation fails
+Other,Uncategorized,Display hierarchy for content contained in section
+Other,Uncategorized,"Display hierarchy for content contained in section, page, pageGroup, document"
+Other,Uncategorized,Display hierarchy for content contained 2 documents
+Other,Uncategorized,Display missing location when no hierarchy returned
+Other,Uncategorized,Render diagnosis icon and remove button
+Other,Uncategorized,Show remove button on hover
+Other,Uncategorized,Call removeDiagnosis function when remove button is clicked
+Other,Uncategorized,Show correct diagnosis name in tooltip
+Other,Uncategorized,Render add button and disabled diagnosis icon
+Other,Uncategorized,Call searchDiagnoses when add button is clicked
+Other,Uncategorized,Disable add button when answerText is missing
+Other,Uncategorized,Disable add button when answerId is missing
+Other,Uncategorized,Pass removeDiagnosis function with correct signature
+Other,Uncategorized,Handle removeDiagnosis being undefined
+Other,Uncategorized,Handle empty diagnosis value array
+Other,Uncategorized,Handle multiple diagnosis values
+Other,Uncategorized,Render the form [Date]
+Other,Uncategorized,Render the form with initial values [Date]
+Other,Uncategorized,Render the form with existing content [Date]
+Other,Uncategorized,Enable save as ready when there is existing content in Draft mode with parents
+Other,Uncategorized,Not render validations section when validations are undefined
+Other,Uncategorized,Render diagnoses in diagnoses tab
+Other,Uncategorized,Highlight answer text box when hovering on diagnoses card
+Other,Uncategorized,Remove diagnosis when remove button is clicked
+Other,Uncategorized,Render yes no content creator form
+Other,Uncategorized,Render table content creator form
+Other,Uncategorized,No render anything for unknown type
+Other,Uncategorized,Renders the add sort rule button
+Other,Uncategorized,Adds a sort order row when add button is clicked
+Other,Uncategorized,Render display setting correctly with existing values
+Other,Uncategorized,Render display setting and update when changed
+Other,Uncategorized,Render display types if content type is a select type and update when changed
+Other,Uncategorized,Render add row button label input when content type is Table
+Other,Uncategorized,Not render add row button label input for non-Table content types
+Other,Uncategorized,Renders add row button label input for table content
+Other,Uncategorized,Allows customizing the add row button label
+Other,Uncategorized,Does not show add row button label input for non-table content
+Other,Uncategorized,Render all fields and components
+Other,Uncategorized,Allow for submit when all fields are filled
+Other,Uncategorized,Add diagnosis to select content
+Other,Uncategorized,Show all the current content values
+Other,Uncategorized,Disable
+Other,Uncategorized,Not render None option switch for SingleSelect
+Other,Uncategorized,Render None option switch for MultiSelect
+Other,Uncategorized,Show None option form fields when switch is enabled
+Other,Uncategorized,Include noneAnswer in form submission when None option is enabled
+Other,Uncategorized,Show all the current content values and diagnosis
+Other,Uncategorized,Remove diagnosis from select content
+Other,Uncategorized,Automatically update diagnosis mapping when answer ID changes
+Other,Uncategorized,Be able to render and save Signature
+Other,Uncategorized,Be able to render and edit Signature
+Other,Uncategorized,Be able to render and save NumericTextBox
+Other,Uncategorized,Be able to render and edit NumericTextBox
+Other,Uncategorized,Be able to render and save Switch
+Other,Uncategorized,Be able to render and edit Switch
+Other,Uncategorized,Be able to render and save Switch with diagnosis
+Other,Uncategorized,Be able to render and edit Switch with diagnosis
+Other,Uncategorized,Be able to remove a diagnosis
+Other,Uncategorized,Renders form fields
+Other,Uncategorized,Renders with initial values
+Other,Uncategorized,Shows validation error if min/max missing
+Other,Uncategorized,Renders input and label
+Other,Uncategorized,Accepts valid input and does not show error
+Other,Uncategorized,Shows error for invalid format
+Other,Uncategorized,Shows error if min is not less than max
+Other,Uncategorized,Clears input and error when clear button is clicked
+Other,Uncategorized,Migrates legacy min/max values to input
+Other,Uncategorized,Be able to render and save YesNo
+Other,Uncategorized,Set buttons as disabled when other answer is toggled on
+Other,Uncategorized,Be able to render and edit YesNo with full hierarchy
+Other,Uncategorized,Be able to render and edit YesNo with partial hierarchy
+Other,Uncategorized,Add diagnosis to yes/no content
+Other,Uncategorized,Remove diagnosis from yes/no content
+Other,Uncategorized,Automatically update diagnosis mapping when answer ID changes
+Other,Uncategorized,Be able to render and save TextBox
+Other,Uncategorized,Be able to render and edit TextBox
+Other,Uncategorized,Renders the correct fields
+Other,Uncategorized,Handles systolic validation inputs
+Other,Uncategorized,Handles diastolic validation inputs
+Other,Uncategorized,Handles systolic min max validation
+Other,Uncategorized,Submits the form
+Other,Uncategorized,Handles systolic answer input
+Other,Uncategorized,Handles diastolic answer input
+Other,Uncategorized,Handles systolic/diastolic answer unique validation
+Other,Uncategorized,Render all fields and components
+Other,Uncategorized,Allow for submit when all fields are filled
+Other,Uncategorized,Show validation message for missing question text
+Other,Uncategorized,Show validation message for invalid question ID
+Other,Uncategorized,Show validation message for invalid answer ID
+Other,Uncategorized,Show all the current content values
+Other,Uncategorized,Display error messages when user edits date question with no legacy date parts
+Other,Uncategorized,Renders all radio options
+Other,Uncategorized,Handles ranged offset selection and input
+Other,Uncategorized,Displays error message for invalid offset input
+Other,Uncategorized,Clears offset value when switching from ranged offset to another option
+Other,Uncategorized,Initializes with pre-selected values
+Other,Uncategorized,Render the initial state with no columns
+Other,Uncategorized,Add and remove a column
+Other,Uncategorized,Handle existing content correctly
+Other,Uncategorized,Disable the Required switch when table is readonly
+Other,Uncategorized,"Save required as false for all columns when readonly is enabled, even if user set required before"
+Other,Uncategorized,Save required as false for all columns when readonly is true in rendering
+Other,Uncategorized,Convert Date column with mmYYYY format to DateMonthYear type when loading existing content
+Other,Uncategorized,Convert DateMonthYear type back to Date with mmYYYY format when saving
+Other,Uncategorized,Display correct date format options in column type dropdown
+Other,Uncategorized,Preserve other column properties when converting date formats
+Other,Uncategorized,Handle multiple date columns with different formats
+Other,Uncategorized,Reorder columns when onDragEnd is called
+Other,Uncategorized,Checked enabled/disabled elements of the modal
+Other,Uncategorized,Will enable Table content when true in feature flags
+Other,Uncategorized,Renders question types in correct column-major alphabetical order by default
+Other,Uncategorized,Maintains column-major order when Table is enabled via feature flag
+Other,Uncategorized,Renders all types as disabled and in correct order if all are disabled
+Other,Uncategorized,Renders the label
+Other,Uncategorized,Always renders the OK button and enables it only when a selection is made
+Other,Uncategorized,Renders the label
+Other,Uncategorized,Always renders the OK button and enables it only when a selection is made
+Other,Uncategorized,Display content details with required
+Other,Uncategorized,Display content details with read only
+Other,Uncategorized,Use the lifecycle changed date time if available
+Other,Uncategorized,"Render answer labels correctly, for yes no"
+Other,Uncategorized,"Render answer labels correctly, for switch"
+Other,Uncategorized,"Render answer labels correctly, for text box"
+Other,Uncategorized,"Render answer labels correctly, for numeric text box"
+Other,Uncategorized,"Render answer labels correctly, for barcode"
+Other,Uncategorized,"Render answer labels correctly, for signature"
+Other,Uncategorized,"Render answer labels correctly, for images"
+Other,Uncategorized,"Render answer labels correctly, for single select"
+Other,Uncategorized,"Render answer labels correctly, for multi select"
+Other,Uncategorized,"Render answer labels correctly, for blood pressure"
+Other,Uncategorized,Renders no columns message
+Other,Uncategorized,Renders up to 4 columns
+Other,Uncategorized,Renders only first 4 columns and shows expand link if more than 4
+Other,Uncategorized,Expands to show all columns and toggles link
+Other,Uncategorized,Shows required label for required columns
+Other,Uncategorized,Render content summary ofr yes/no
+Other,Uncategorized,Render key value pair for answers
+Other,Uncategorized,Render date content summary with 3 date parts and unknown
+Other,Uncategorized,Render date content summary with single date with unknown
+Other,Uncategorized,Render answer labels correctly
+Other,Uncategorized,Render answer suffix correctly
+Other,Uncategorized,Display warning banner when content in undefined
+Other,Uncategorized,Display preview of date content and clear answer when button is clicked
+Other,Uncategorized,Render the Preview toolbar with ContextWriter
+Other,Uncategorized,Pass the selected document to ContextWriter
+Other,Uncategorized,Renders document dropdown with items when data is available when document is in Draft state
+Other,Uncategorized,Renders document dropdown with items when data is available when document is in Test state
+Other,Uncategorized,Render the modal correctly with modal tile as Test
+Other,Uncategorized,Render the modal correctly with modal tile as Publish
+Other,Uncategorized,Render the spinner with awaiting finish message
+Other,Uncategorized,Render error notification if useQueryDocumentValidations failed
+Other,Uncategorized,Show there are issues if useQueryDocumentValidations returns as validations failed
+Other,Uncategorized,Show create a downloadable file if useQueryDocumentValidations returns validations issues
+Other,Uncategorized,Show there are no issues if useQueryDocumentValidations returns as validations Passed
+Other,Uncategorized,Show there are no issues if useQueryDocumentValidations returns as validations Passed for document status Publish
+Other,Uncategorized,Be able to submit to change document status using useEditDocumentLifecycle for document status - Test
+Other,Uncategorized,Be able to submit to change document status using useEditDocumentLifecycle for document status - Publish
+Other,Uncategorized,Show there are issues if useEditDocumentLifecycle returns as validations failed
+Other,Uncategorized,Render a spinner when fetching the last publish version
+Other,Uncategorized,Render a error notification if useQueryPreviouslyPublishedVersion fails
+Other,Uncategorized,Show there are no issues if useQueryDocumentValidations returns as validations Passed for document status Recall
+Other,Uncategorized,Be able to submit to change document status using useEditDocumentLifecycle for document status - Recall
+Other,Uncategorized,Convert NotReady issue to CSV line correctly
+Other,Uncategorized,Convert MissingReference issue with Action location to CSV line correctly
+Other,Uncategorized,Convert MissingReference issue with Logic location to CSV line correctly
+Other,Uncategorized,Convert MissingReference issue with missing answer reference to CSV line correctly
+Other,Uncategorized,Convert MissingReference issue with no reference to non-existent reference error (actions)
+Other,Uncategorized,Convert DuplicateQuestionId issue to CSV line correctly
+Other,Uncategorized,Convert DuplicateAnswerId issue to CSV line correctly
+Other,Uncategorized,Throw error for unsupported issue type
+Other,Uncategorized,Generate correct link for Content resource
+Other,Uncategorized,Generate correct link for Document resource
+Other,Uncategorized,Generate correct link for Rule resource
+Other,Uncategorized,Generate correct link for Section group
+Other,Uncategorized,Generate correct link for Page group
+Other,Uncategorized,Generate correct link for PageGroup
+Other,Uncategorized,Return
+Other,Uncategorized,Renders document notes when expanded
+Other,Uncategorized,Hides document notes when collapsed

@@ -1,0 +1,70 @@
+
+BASELINE RE-EXTRACTION ANALYSIS
+================================
+
+Date: December 1, 2025
+Comparison: Original baseline vs Re-extracted baseline
+
+KEY FINDINGS:
+-------------
+
+1. TEST NAMES: ✓ PERFECT MATCH
+   - Original: 1,586 unique test names
+   - Re-extracted: 1,586 unique test names
+   - Difference: 0 (100% match)
+
+2. CSV ROWS: ✓ PERFECT MATCH
+   - Original: 1,670 rows
+   - Re-extracted: 1,670 rows
+   - Difference: 0
+
+3. CATEGORIZATION: ⚠ SIGNIFICANT DIFFERENCES
+   - Tests with category differences: 753 (47.5% of all tests)
+   - This indicates the categorization logic has been updated/improved
+
+MAJOR CATEGORIZATION CHANGES:
+-----------------------------
+
+1. Component Library → Uncategorized
+   - 363 tests moved from "UI Components - Component Library" to "Other - Uncategorized"
+   - This is the same pattern we saw in Period 3 (Jan 16 → Jan 22)
+
+2. UI Components Consolidation
+   - Multiple subcategories consolidated into "Other UI Components"
+   - Navigation Components: 35 → 0 (moved to Other UI Components)
+   - Matrix Components: 44 → 11 (33 moved)
+   - Conflicts & Clarifications: 18 → 0
+   - External Editor: 9 → 0
+   - Diagnosis Validation Components: 17 → 0
+   - Page Components: 32 → 3 (29 moved)
+
+3. Content Management Reorganization
+   - "Content Writers" (93) → "Content Writers E2E" (105)
+   - Multiple subcategories consolidated into "Other E2E Tests"
+   - DFV Rules: 25 → 0
+   - Document Management: 6 → 0
+   - Groups & Structure: 41 → 0
+   - Lifecycle Management: 20 → 0
+   - Content Management: 62 → 0
+
+CONCLUSION:
+-----------
+
+The test extraction is CONSISTENT - all 1,586 test names match perfectly.
+However, the CATEGORIZATION LOGIC has been significantly updated since the 
+original baseline was created.
+
+RECOMMENDATION:
+---------------
+
+For historical analysis consistency, we should:
+1. Keep using the original baseline categories for Period 1 analysis
+2. Note that categorization improvements were made
+3. Consider re-categorizing the baseline if we want consistent categorization
+   across all periods (but this would change historical comparisons)
+
+The fact that test names match perfectly validates that:
+- The extraction script correctly identifies test cases
+- The codebase state on Dec 1, 2025 is correctly captured
+- The issue with Period 1/Period 2 (341 tests added/removed) is NOT due to
+  extraction inconsistencies, but likely due to actual code changes or test renaming

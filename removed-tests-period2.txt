@@ -1,0 +1,1037 @@
+================================================================================
+TESTS REMOVED IN PERIOD 2 (Jan 12 → Jan 16, 2026)
+================================================================================
+
+Total unique test names removed: 341
+
+These tests were present in the Jan 12, 2026 CSV but not in the Jan 16, 2026 CSV.
+This could indicate:
+1. Tests were actually removed from the codebase
+2. Tests were renamed (e.g., 'Return null...' → 'Return undefined...')
+3. Test extraction inconsistencies between runs
+
+================================================================================
+
+1. Access __WB_MANIFEST from self
+   Was in Period 1 categories: Other - Uncategorized
+
+2. Accumulate inverted actions from multiple statement levels
+   Was in Period 1 categories: Other - Uncategorized
+
+3. Add conflict id to conflictsByIdToResolve
+   Was in Period 1 categories: Rules Engine - Conflict Action Handler
+
+4. Add conflict to conflictsToShow
+   Was in Period 1 categories: Rules Engine - Conflict Action Handler
+
+5. Add content id to answer deletes
+   Was in Period 1 categories: Rules Engine - Answer Action Handler
+
+6. Add error event listener to service worker
+   Was in Period 1 categories: Other - Uncategorized
+
+7. Add fallback with inverted actions when no fallback exists
+   Was in Period 1 categories: Other - Uncategorized
+
+8. Add new else if condition when button is clicked
+   Was in Period 1 categories: Other - Uncategorized
+
+9. Allow duplicate conflict ids in resolution list
+   Was in Period 1 categories: Rules Engine - Conflict Action Handler
+
+10. Allow removing else-if conditions but not the final else condition
+   Was in Period 1 categories: Content Management - Rules Testing
+
+11. Applies disabled styles to all sections when view metadata disabled is true
+   Was in Period 1 categories: UI Components - Matrix Components
+
+12. Applies pointer-events-none class when disabled is true
+   Was in Period 1 categories: UI Components - Matrix Components
+
+13. Apply correct styles when disabled is true
+   Was in Period 1 categories: UI Components - Matrix Components
+
+14. Be tested through DiagnosisProvider integration tests
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+15. Calculate Depression Subscale Score as 0 when both inputs are 0
+   Was in Period 1 categories: Rules Engine - Auto-Calculate Rules
+
+16. Calculate lung function score smoked based age and years smoked and lung function questions and recalculate with different answers
+   Was in Period 1 categories: Rules Engine - Auto-Calculate Rules
+
+17. Call launchCogEditor when launchEditor is invoked through ref
+   Was in Period 1 categories: UI Components - Component Library
+
+18. Call launchEditor when Cog button is clicked
+   Was in Period 1 categories: UI Components - Component Library
+
+19. Call launchEditor with correct type for Spirometry
+   Was in Period 1 categories: UI Components - Component Library
+
+20. Call launchSpirometryEditor when launchEditor is invoked through ref
+   Was in Period 1 categories: UI Components - Component Library
+
+21. Call onConflictsCountChange when conflicts count changes from non-zero to zero
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+22. Call onConflictsCountChange with 0 on initial render
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+23. Call onConflictsCountChange with 0 when all conflicts are removed
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+24. Call onConflictsCountChange with correct count when conflicts are added
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+25. Call onConflictsCountChange with correct count when multiple conflicts are added
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+26. Call onResultChange when hasResult changes from false to true
+   Was in Period 1 categories: UI Components - Component Library
+
+27. Call onResultChange when hasResult changes from true to false
+   Was in Period 1 categories: UI Components - Component Library
+
+28. Call onResultChange with false and set result to undefined when no cog data exists
+   Was in Period 1 categories: UI Components - Component Library
+
+29. Call onResultChange with false when no spirometry data exists
+   Was in Period 1 categories: UI Components - Component Library
+
+30. Call onResultChange with true and set result when cog data exists
+   Was in Period 1 categories: UI Components - Component Library
+
+31. Call onResultChange with true when spirometry data exists
+   Was in Period 1 categories: UI Components - Component Library
+
+32. Call precacheAndRoute with manifest
+   Was in Period 1 categories: Other - Uncategorized
+
+33. Catch error with error boundary
+   Was in Period 1 categories: Other - Uncategorized
+
+34. Check enteredDiagnoses when looking for medications
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+35. Clear answerId and value for UnsetAnswerId actions
+   Was in Period 1 categories: Other - Uncategorized
+
+36. Clear answerId and value for UnsetValue actions
+   Was in Period 1 categories: Other - Uncategorized
+
+37. Clear timeout when activated event is triggered and timeout exists
+   Was in Period 1 categories: Other - Uncategorized
+
+38. Clears answers when clearCog is called
+   Was in Period 1 categories: UI Components - Component Library
+
+39. Clears cog state when clearCog is called
+   Was in Period 1 categories: UI Components - Component Library
+
+40. Clears result answers when clearSpirometryResult is called
+   Was in Period 1 categories: UI Components - Component Library
+
+41. Clears spirometry state when clearSpirometryResult is called
+   Was in Period 1 categories: UI Components - Component Library
+
+42. Clears the answers when clearAnswers is invoked
+   Was in Period 1 categories: UI Components - Component Library
+
+43. Complete Exam Information section and verify answers
+   Was in Period 1 categories: Context Writer E2E - VIHE Form
+
+44. Complete multiple sections and track all answers
+   Was in Period 1 categories: Context Writer E2E - VIHE Form
+
+45. Consolidate conflicting actions
+   Was in Period 1 categories: Rules Engine - General Action Handler
+
+46. Correctly name deeply nested fallback conditions
+   Was in Period 1 categories: Other - Uncategorized
+
+47. Create 3 conflicts (nC2) for three conflicting diagnoses
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+48. Create Workbox instance with correct service worker path
+   Was in Period 1 categories: Other - Uncategorized
+
+49. Create a new action with default reference
+   Was in Period 1 categories: Other - Uncategorized
+
+50. Create action with ShowConflict actionType
+   Was in Period 1 categories: Other - Uncategorized
+
+51. Create auto-select rule with else-if and else conditions when feature flag is enabled
+   Was in Period 1 categories: Content Management - Rules Testing
+
+52. Create combined operand with And operator and no sub-operands
+   Was in Period 1 categories: Other - Uncategorized
+
+53. Create combined operand with provided sub-operands
+   Was in Period 1 categories: Other - Uncategorized
+
+54. Create condition operand with Equals operator
+   Was in Period 1 categories: Other - Uncategorized
+
+55. Create conflict for symmetric diagnosis pair
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+56. Create conflict when confirmed diagnosis is managed by medication but no medication exists
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+57. Create conflict when confirmed diagnosis matches diagnosis content but not answered
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+58. Create else statement with default action when no actions provided
+   Was in Period 1 categories: Other - Uncategorized
+
+59. Create else statement with provided actions
+   Was in Period 1 categories: Other - Uncategorized
+
+60. Create new metadata for content
+   Was in Period 1 categories: Rules Engine - General Action Handler
+
+61. Create only one conflict when multiple answers in the same question have the same diagnosis
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+62. Create statement with logic and default actions when no actions provided
+   Was in Period 1 categories: Other - Uncategorized
+
+63. Create statement with provided actions and clear answerId and value
+   Was in Period 1 categories: Other - Uncategorized
+
+64. Create statement with provided else block
+   Was in Period 1 categories: Other - Uncategorized
+
+65. Create supplementary data operand with Contains operator
+   Was in Period 1 categories: Other - Uncategorized
+
+66. Create table operand with SelectRowWhereColumnEquals operator
+   Was in Period 1 categories: Other - Uncategorized
+
+67. Deduplicate actions using map key
+   Was in Period 1 categories: Other - Uncategorized
+
+68. Default to text utility when no utility parameter is provided
+   Was in Period 1 categories: UI Components - Navigation Components
+
+69. Delete contentId when UnsetSingleAnswerId removes the last answer
+   Was in Period 1 categories: Rules Engine - General Action Handler
+
+70. Derives cog from existing answers
+   Was in Period 1 categories: UI Components - Component Library
+
+71. Display
+   Was in Period 1 categories: Other - Uncategorized
+
+72. Display Re-launch when spirometry has result
+   Was in Period 1 categories: UI Components - Component Library
+
+73. Display add else if button before final else statement for AutoSelect rules
+   Was in Period 1 categories: Other - Uncategorized
+
+74. Display add else if button for AutoSelect rule with single statement
+   Was in Period 1 categories: Other - Uncategorized
+
+75. Does not apply disabled styles when view metadata disabled is false
+   Was in Period 1 categories: UI Components - Matrix Components
+
+76. Exclude required content when answer exists and is valid via isAnswerValid
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+77. Expose launchEditor method through ref
+   Was in Period 1 categories: UI Components - Component Library, UI Components - Component Library
+
+78. Exposes launchCogEditor and clearCog
+   Was in Period 1 categories: UI Components - Component Library
+
+79. Extract input ids from Count operands
+   Was in Period 1 categories: Rules Engine - Rule Executor Utilities
+
+80. Extract input ids from deeply nested Operand structures
+   Was in Period 1 categories: Rules Engine - Rule Executor Utilities
+
+81. Extract input ids from fallback statement
+   Was in Period 1 categories: Rules Engine - Rule Executor Utilities
+
+82. Extract input ids from nested Operand operands
+   Was in Period 1 categories: Rules Engine - Rule Executor Utilities
+
+83. Extract multiple input ids from multiple Reference operands
+   Was in Period 1 categories: Rules Engine - Rule Executor Utilities
+
+84. Extract single input id from Reference operand
+   Was in Period 1 categories: Rules Engine - Rule Executor Utilities
+
+85. Finalize evaluation and verify all answers are emitted
+   Was in Period 1 categories: Context Writer E2E - VIHE Form
+
+86. Format numeric values with no decimals for integers
+   Was in Period 1 categories: Rules Engine - Answer Action Handler
+
+87. Format numeric values with one decimal for floats
+   Was in Period 1 categories: Rules Engine - Answer Action Handler
+
+88. Handle APP_VERSION as undefined
+   Was in Period 1 categories: Other - Uncategorized
+
+89. Handle GetVersion message with empty ports array
+   Was in Period 1 categories: Other - Uncategorized
+
+90. Handle UnsetValue action type
+   Was in Period 1 categories: Rules Engine - Answer Action Handler
+
+91. Handle answer changes and track latest values
+   Was in Period 1 categories: Context Writer E2E - VIHE Form
+
+92. Handle answer without source when ruleName is missing
+   Was in Period 1 categories: Rules Engine - Answer Action Handler
+
+93. Handle case-insensitive matching for diagnosis content
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+94. Handle content list with non-table required items when not required
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+95. Handle content list with table items when not required
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+96. Handle custom row id
+   Was in Period 1 categories: Rules Engine - Answer Action Handler, Rules Engine - Required Action Handler, Rules Engine - Required Action Handler, Rules Engine - Visibility Action Handler, Rules Engine - Visibility Action Handler
+
+97. Handle deeply nested fallback statements
+   Was in Period 1 categories: Other - Uncategorized
+
+98. Handle empty action list
+   Was in Period 1 categories: Rules Engine - General Action Handler
+
+99. Handle empty actions array
+   Was in Period 1 categories: Other - Uncategorized
+
+100. Handle empty actions in statements
+   Was in Period 1 categories: Other - Uncategorized
+
+101. Handle empty conflicting answers
+   Was in Period 1 categories: Rules Engine - Conflict Action Handler
+
+102. Handle empty conflictingDiagnosisSets gracefully
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+103. Handle empty diagnosisContent array
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+104. Handle empty error message in service worker error event
+   Was in Period 1 categories: Other - Uncategorized
+
+105. Handle empty manifest
+   Was in Period 1 categories: Other - Uncategorized
+
+106. Handle empty operands array
+   Was in Period 1 categories: Rules Engine - Rule Executor Utilities
+
+107. Handle empty string as color
+   Was in Period 1 categories: UI Components - Navigation Components
+
+108. Handle installing event when service worker is undefined
+   Was in Period 1 categories: Other - Uncategorized
+
+109. Handle manifest with multiple entries
+   Was in Period 1 categories: Other - Uncategorized
+
+110. Handle message when data type is empty string
+   Was in Period 1 categories: Other - Uncategorized
+
+111. Handle message when ports is undefined
+   Was in Period 1 categories: Other - Uncategorized
+
+112. Handle message with extra properties in data
+   Was in Period 1 categories: Other - Uncategorized
+
+113. Handle message with multiple ports
+   Was in Period 1 categories: Other - Uncategorized
+
+114. Handle message with no type property
+   Was in Period 1 categories: Other - Uncategorized
+
+115. Handle message with null data
+   Was in Period 1 categories: Other - Uncategorized
+
+116. Handle message with undefined data
+   Was in Period 1 categories: Other - Uncategorized
+
+117. Handle missing content gracefully
+   Was in Period 1 categories: Rules Engine - Answer Action Handler
+
+118. Handle missing diagnosisNameAnswerId gracefully
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+119. Handle missing required fields
+   Was in Period 1 categories: Context Writer E2E - VIHE Form
+
+120. Handle mix of valid and invalid message types
+   Was in Period 1 categories: Other - Uncategorized
+
+121. Handle multiple GetVersion messages
+   Was in Period 1 categories: Other - Uncategorized
+
+122. Handle multiple conflict resolutions
+   Was in Period 1 categories: Rules Engine - Conflict Action Handler
+
+123. Handle multiple conflicting diagnosis sets
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+124. Handle multiple conflicts
+   Was in Period 1 categories: Rules Engine - Conflict Action Handler
+
+125. Handle multiple content items
+   Was in Period 1 categories: Rules Engine - Required Action Handler
+
+126. Handle multiple event listeners being triggered
+   Was in Period 1 categories: Other - Uncategorized
+
+127. Handle multiple managedBy values
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+128. Handle multiple row ids
+   Was in Period 1 categories: Rules Engine - General Action Handler
+
+129. Handle multiple unset calls
+   Was in Period 1 categories: Rules Engine - Answer Action Handler
+
+130. Handle null as color
+   Was in Period 1 categories: UI Components - Navigation Components
+
+131. Handle rule with only else block (no logic in root)
+   Was in Period 1 categories: Other - Uncategorized
+
+132. Handle showing and resolving conflicts in sequence
+   Was in Period 1 categories: Rules Engine - Conflict Action Handler
+
+133. Handle statement with empty actions but has fallback with actions
+   Was in Period 1 categories: Other - Uncategorized
+
+134. Handle statement with only Constant operands
+   Was in Period 1 categories: Rules Engine - Rule Executor Utilities
+
+135. Handle statement with undefined logic
+   Was in Period 1 categories: Rules Engine - Rule Executor Utilities
+
+136. Handle statements with custom initial name
+   Was in Period 1 categories: Other - Uncategorized
+
+137. Handle statements with multiple actions at each level
+   Was in Period 1 categories: Other - Uncategorized
+
+138. Handle toggling required state
+   Was in Period 1 categories: Rules Engine - Required Action Handler
+
+139. Handle trimmed whitespace in diagnosis names
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+140. Handle unset answer actions
+   Was in Period 1 categories: Rules Engine - General Action Handler
+
+141. Have correct initial values structure
+   Was in Period 1 categories: Other - Uncategorized
+
+142. Have mappings for all PageGroupIcons enum values
+   Was in Period 1 categories: UI Components - Navigation Components
+
+143. Ignore Constant operands and only extract Reference operands
+   Was in Period 1 categories: Rules Engine - Rule Executor Utilities
+
+144. Include both clinicians and PCP in possiblePrescribers
+   Was in Period 1 categories: UI Components - External Editor
+
+145. Include initial actions when provided
+   Was in Period 1 categories: Other - Uncategorized
+
+146. Include required content when answer exists but is invalid via isAnswerValid
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+147. Invert action types correctly for AutoSelect actions
+   Was in Period 1 categories: Other - Uncategorized
+
+148. Invert action types correctly for Conflict actions
+   Was in Period 1 categories: Other - Uncategorized
+
+149. Joins managedBy entries with a comma and space
+   Was in Period 1 categories: UI Components - Diagnosis Validation Components
+
+150. Launches cog editor when launchCogEditor is called
+   Was in Period 1 categories: UI Components - Component Library
+
+151. Launches spirometry editor with correct request data
+   Was in Period 1 categories: UI Components - Component Library
+
+152. Load VIHE form with test data and display correctly
+   Was in Period 1 categories: Context Writer E2E - VIHE Form
+
+153. Load form with previous answers
+   Was in Period 1 categories: Context Writer E2E - VIHE Form
+
+154. Log error when service worker registration fails
+   Was in Period 1 categories: Other - Uncategorized
+
+155. Log error with componentStack and digest
+   Was in Period 1 categories: Other - Uncategorized
+
+156. Log error with componentStack but without digest
+   Was in Period 1 categories: Other - Uncategorized
+
+157. Log error with errorInfo but no componentStack
+   Was in Period 1 categories: Other - Uncategorized
+
+158. Log error without errorInfo
+   Was in Period 1 categories: Other - Uncategorized
+
+159. Log info when activated event is triggered
+   Was in Period 1 categories: Other - Uncategorized
+
+160. Log info when installing event is triggered
+   Was in Period 1 categories: Other - Uncategorized
+
+161. Log info when waiting event is triggered
+   Was in Period 1 categories: Other - Uncategorized
+
+162. Log medication when adding or updating
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+163. Map all PageGroupIcons to their corresponding FontAwesome icons
+   Was in Period 1 categories: UI Components - Navigation Components
+
+164. Mark nested statements as else blocks
+   Was in Period 1 categories: Other - Uncategorized
+
+165. Match diagnoses with case-insensitive and trimmed names in riskAdjustableDiagnoses
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+166. Memoize content to avoid unnecessary recalculations
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+167. Merge SetSingleAnswerId with existing state answers
+   Was in Period 1 categories: Rules Engine - General Action Handler
+
+168. Merge UnsetSingleAnswerId with existing updates
+   Was in Period 1 categories: Rules Engine - General Action Handler
+
+169. Merge answers from multiple rules on the same MultiSelect question
+   Was in Period 1 categories: Rules Engine - Auto-Select Rules
+
+170. Merge input ids with existing RuleInfo
+   Was in Period 1 categories: Rules Engine - Rule Executor Utilities
+
+171. Merge multiple SetSingleAnswerId actions for MultiSelect content
+   Was in Period 1 categories: Rules Engine - General Action Handler
+
+172. Merge multiple metadata changes for same row
+   Was in Period 1 categories: Rules Engine - General Action Handler
+
+173. Merge with existing metadata
+   Was in Period 1 categories: Rules Engine - Required Action Handler, Rules Engine - Required Action Handler, Rules Engine - Visibility Action Handler, Rules Engine - Visibility Action Handler
+
+174. Normalize rowId to default for non-multirow content
+   Was in Period 1 categories: Rules Engine - General Action Handler
+
+175. Not add duplicate input ids
+   Was in Period 1 categories: Rules Engine - Rule Executor Utilities
+
+176. Not clear timeout when timeout does not exist
+   Was in Period 1 categories: Other - Uncategorized
+
+177. Not create conflict when diagnosis is not confirmed
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+178. Not create conflict when diagnosis is not managed by medication
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+179. Not create conflict when medication exists for diagnosis
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+180. Not create conflicts when diagnoses are not confirmed
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+181. Not create conflicts when only one diagnosis from set is confirmed
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+182. Not display add else if button for non-AutoSelect rule types
+   Was in Period 1 categories: Other - Uncategorized
+
+183. Not display add else if button for non-AutoSelect rules
+   Was in Period 1 categories: Other - Uncategorized
+
+184. Not display add else if button when there are 3+ conditions with final having logic
+   Was in Period 1 categories: Other - Uncategorized
+
+185. Not error when onConflictsCountChange is not provided
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+186. Not include content that is not required
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+187. Not include content that is not visible
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+188. Not include readonly content
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+189. Not match diagnoses when internal whitespace differs
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+190. Not modify existing fallback without logic
+   Was in Period 1 categories: Other - Uncategorized
+
+191. Not publish update completed event when service worker is not activated
+   Was in Period 1 categories: Other - Uncategorized
+
+192. Not render SpirometryComponent for non-Spirometry test types
+   Was in Period 1 categories: UI Components - Component Library
+
+193. Not respond to messages with different types
+   Was in Period 1 categories: Other - Uncategorized
+
+194. Not set timeout when pwaUpdate query parameter is not present
+   Was in Period 1 categories: Other - Uncategorized
+
+195. Not set timeout when query string has other parameters
+   Was in Period 1 categories: Other - Uncategorized
+
+196. Overwrite existing conflict with same id
+   Was in Period 1 categories: Rules Engine - Conflict Action Handler
+
+197. Overwrite existing values when updating
+   Was in Period 1 categories: Rules Engine - General Action Handler
+
+198. Preserve action reference properties when inverting
+   Was in Period 1 categories: Other - Uncategorized
+
+199. Preserve answers added by previous rules in the same batch
+   Was in Period 1 categories: Rules Engine - General Action Handler
+
+200. Preserve answers added by previous rules when unsetting a different answer
+   Was in Period 1 categories: Rules Engine - General Action Handler
+
+201. Preserve custom rowId for multirow content
+   Was in Period 1 categories: Rules Engine - General Action Handler
+
+202. Preserve hasElseCondition true from existing RuleInfo
+   Was in Period 1 categories: Rules Engine - Rule Executor Utilities
+
+203. Preserve other metadata when setting required
+   Was in Period 1 categories: Rules Engine - Required Action Handler
+
+204. Preserve other metadata when unsetting required
+   Was in Period 1 categories: Rules Engine - Required Action Handler
+
+205. Process SetSingleAnswerId actions for MultiSelect content
+   Was in Period 1 categories: Rules Engine - General Action Handler
+
+206. Process UnsetSingleAnswerId actions and preserve other answers
+   Was in Period 1 categories: Rules Engine - General Action Handler
+
+207. Process answer actions
+   Was in Period 1 categories: Rules Engine - General Action Handler
+
+208. Process conflict actions
+   Was in Period 1 categories: Rules Engine - General Action Handler
+
+209. Process multiple actions in sequence
+   Was in Period 1 categories: Rules Engine - General Action Handler
+
+210. Process multiple nested fallback statements
+   Was in Period 1 categories: Rules Engine - Rule Executor Utilities
+
+211. Process required actions
+   Was in Period 1 categories: Rules Engine - General Action Handler
+
+212. Process visibility actions
+   Was in Period 1 categories: Rules Engine - General Action Handler
+
+213. Publish update completed event when service worker is activated within timeout
+   Was in Period 1 categories: Other - Uncategorized
+
+214. Publish update completed event with version from service worker
+   Was in Period 1 categories: Other - Uncategorized, Other - Uncategorized
+
+215. Publish update failed event when messageSW fails
+   Was in Period 1 categories: Other - Uncategorized, Other - Uncategorized
+
+216. Publish update failed event when service worker error occurs
+   Was in Period 1 categories: Other - Uncategorized
+
+217. Recursively add fallback to nested statements with logic
+   Was in Period 1 categories: Other - Uncategorized
+
+218. Recursively collect actions from nested fallback statements
+   Was in Period 1 categories: Other - Uncategorized
+
+219. Register activated event listener
+   Was in Period 1 categories: Other - Uncategorized
+
+220. Register installing event listener
+   Was in Period 1 categories: Other - Uncategorized
+
+221. Register message event listener
+   Was in Period 1 categories: Other - Uncategorized
+
+222. Register the service worker
+   Was in Period 1 categories: Other - Uncategorized
+
+223. Register waiting event listener
+   Was in Period 1 categories: Other - Uncategorized
+
+224. Remove conflicts and send count 0 when all conflicting diagnoses are removed
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+225. Remove conflicts when medications are added
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+226. Render cogGrade and cogScore when Cog test has result
+   Was in Period 1 categories: UI Components - Component Library
+
+227. Render correctly when missing provider tag
+   Was in Period 1 categories: UI Components - Conflicts & Clarifications
+
+228. Render else-if statement with RuleSection wrapper
+   Was in Period 1 categories: Other - Uncategorized
+
+229. Render error message and name
+   Was in Period 1 categories: Other - Uncategorized
+
+230. Render multiple statements with fallback
+   Was in Period 1 categories: Other - Uncategorized
+
+231. Render nested fallback statements
+   Was in Period 1 categories: Other - Uncategorized
+
+232. Render new navigation styling when feature flag is enabled and formId is 18
+   Was in Period 1 categories: UI Components - Page Components
+
+233. Render old navigation styling when feature flag array does not include formId 18
+   Was in Period 1 categories: UI Components - Page Components
+
+234. Render old navigation styling when feature flag is enabled but formId is not 18
+   Was in Period 1 categories: UI Components - Page Components
+
+235. Render old navigation styling when feature flag is not enabled
+   Was in Period 1 categories: UI Components - Page Components
+
+236. Render single root statement without RuleSection wrapper
+   Was in Period 1 categories: Other - Uncategorized
+
+237. Render with correct styling classes
+   Was in Period 1 categories: Other - Uncategorized
+
+238. Render without crashing
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+239. Renders rationale when not actively managed and rationaleUnmanaged provided
+   Was in Period 1 categories: UI Components - Diagnosis Validation Components
+
+240. Renders when only recommendedFollowUp is provided (no managedBy or rationale)
+   Was in Period 1 categories: UI Components - Diagnosis Validation Components
+
+241. Respond with APP_VERSION when GetVersion message is received
+   Was in Period 1 categories: Other - Uncategorized
+
+242. Respond with different APP_VERSION when version changes
+   Was in Period 1 categories: Other - Uncategorized
+
+243. Return AutoSelect actions when ruleType is AutoSelect and isElseBlock is false
+   Was in Period 1 categories: Other - Uncategorized
+
+244. Return Conflict actions when ruleType is Conflict and isElseBlock is false
+   Was in Period 1 categories: Other - Uncategorized
+
+245. Return Required actions when ruleType is Required and isElseBlock is false
+   Was in Period 1 categories: Other - Uncategorized
+
+246. Return addOrUpdateDiagnosis and removeDiagnosis functions
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+247. Return all actions from a statement without fallback
+   Was in Period 1 categories: Other - Uncategorized
+
+248. Return all diagnosis content fields
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+249. Return all statements in order
+   Was in Period 1 categories: Other - Uncategorized
+
+250. Return answer IDs
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+251. Return array with DoNothing action for unsupported rule types when isElseBlock is true
+   Was in Period 1 categories: Other - Uncategorized
+
+252. Return array with DoNothing action when no ruleType is provided and isElseBlock is true
+   Was in Period 1 categories: Other - Uncategorized
+
+253. Return array with DoNothing action when ruleType is undefined and isElseBlock is true
+   Was in Period 1 categories: Other - Uncategorized
+
+254. Return correct background color class for Green
+   Was in Period 1 categories: UI Components - Navigation Components
+
+255. Return correct background color class for Navy
+   Was in Period 1 categories: UI Components - Navigation Components
+
+256. Return correct background color class for Peach
+   Was in Period 1 categories: UI Components - Navigation Components
+
+257. Return correct background color class for Pink
+   Was in Period 1 categories: UI Components - Navigation Components
+
+258. Return correct background color class for Purple
+   Was in Period 1 categories: UI Components - Navigation Components
+
+259. Return correct background color class for Teal
+   Was in Period 1 categories: UI Components - Navigation Components
+
+260. Return correct background color class for Yellow
+   Was in Period 1 categories: UI Components - Navigation Components
+
+261. Return correct border color class for Green
+   Was in Period 1 categories: UI Components - Navigation Components
+
+262. Return correct border color class for Navy
+   Was in Period 1 categories: UI Components - Navigation Components
+
+263. Return correct border color class for Peach
+   Was in Period 1 categories: UI Components - Navigation Components
+
+264. Return correct border color class for Pink
+   Was in Period 1 categories: UI Components - Navigation Components
+
+265. Return correct border color class for Purple
+   Was in Period 1 categories: UI Components - Navigation Components
+
+266. Return correct border color class for Teal
+   Was in Period 1 categories: UI Components - Navigation Components
+
+267. Return correct border color class for Yellow
+   Was in Period 1 categories: UI Components - Navigation Components
+
+268. Return correct text color class for Green
+   Was in Period 1 categories: UI Components - Navigation Components
+
+269. Return correct text color class for Navy
+   Was in Period 1 categories: UI Components - Navigation Components
+
+270. Return correct text color class for Peach
+   Was in Period 1 categories: UI Components - Navigation Components
+
+271. Return correct text color class for Pink
+   Was in Period 1 categories: UI Components - Navigation Components
+
+272. Return correct text color class for Purple
+   Was in Period 1 categories: UI Components - Navigation Components
+
+273. Return correct text color class for Teal
+   Was in Period 1 categories: UI Components - Navigation Components
+
+274. Return correct text color class for Yellow
+   Was in Period 1 categories: UI Components - Navigation Components
+
+275. Return default Pink background color when color is undefined
+   Was in Period 1 categories: UI Components - Navigation Components
+
+276. Return default Pink border color when color is undefined
+   Was in Period 1 categories: UI Components - Navigation Components
+
+277. Return default Pink text color when color is undefined
+   Was in Period 1 categories: UI Components - Navigation Components
+
+278. Return default color when invalid color string is provided
+   Was in Period 1 categories: UI Components - Navigation Components
+
+279. Return empty array for unsupported rule types when isElseBlock is false
+   Was in Period 1 categories: Other - Uncategorized
+
+280. Return empty array when all required matrix content is answered
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+281. Return empty array when matrix does not exist
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+282. Return empty array when no ruleType is provided and isElseBlock is false
+   Was in Period 1 categories: Other - Uncategorized
+
+283. Return empty array when ruleType is undefined and isElseBlock is false
+   Was in Period 1 categories: Other - Uncategorized
+
+284. Return empty inputIds and hasElseCondition false for statement with logic but no fallback
+   Was in Period 1 categories: Rules Engine - Rule Executor Utilities
+
+285. Return false when actions does not contain reference
+   Was in Period 1 categories: Other - Uncategorized
+
+286. Return false when logic does not contain reference
+   Was in Period 1 categories: Other - Uncategorized
+
+287. Return followUpPCPAnswer when available
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+288. Return hasElseCondition true for statement with no logic and no fallback
+   Was in Period 1 categories: Rules Engine - Rule Executor Utilities
+
+289. Return inverse AutoSelect actions with DoNothing when ruleType is AutoSelect and isElseBlock is true
+   Was in Period 1 categories: Other - Uncategorized
+
+290. Return inverse Conflict actions with DoNothing when ruleType is Conflict and isElseBlock is true
+   Was in Period 1 categories: Other - Uncategorized
+
+291. Return inverse Required actions with DoNothing when ruleType is Required and isElseBlock is true
+   Was in Period 1 categories: Other - Uncategorized
+
+292. Return inverse visibility actions with DoNothing when ruleType is Visibility and isElseBlock is true
+   Was in Period 1 categories: Other - Uncategorized
+
+293. Return managedByMedicationsAnswer
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+294. Return multiple conditions for nested fallback statements
+   Was in Period 1 categories: Other - Uncategorized
+
+295. Return null as component output
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+296. Return same reference when called with same RuleInfo object
+   Was in Period 1 categories: Rules Engine - Rule Executor Utilities
+
+297. Return single condition for statement without fallback
+   Was in Period 1 categories: Other - Uncategorized
+
+298. Return table id when table is required and unanswered
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+299. Return text color class when utility is not recognized
+   Was in Period 1 categories: UI Components - Navigation Components
+
+300. Return true when actions already contains reference
+   Was in Period 1 categories: Other - Uncategorized
+
+301. Return true when logic already contains reference
+   Was in Period 1 categories: Other - Uncategorized
+
+302. Return unanswered required matrix content for a specific row
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+303. Return undefined from useQueryGroup if no groupId was passed
+   Was in Period 1 categories: API Services - Groups Service
+
+304. Return visibility actions when ruleType is Visibility and isElseBlock is false
+   Was in Period 1 categories: Other - Uncategorized
+
+305. Set answer by id for single select content
+   Was in Period 1 categories: Rules Engine - Answer Action Handler
+
+306. Set answer with explicit value for SetValue action
+   Was in Period 1 categories: Rules Engine - Answer Action Handler
+
+307. Set content as hidden
+   Was in Period 1 categories: Rules Engine - Visibility Action Handler
+
+308. Set content as not required
+   Was in Period 1 categories: Rules Engine - Required Action Handler
+
+309. Set content as required
+   Was in Period 1 categories: Rules Engine - Required Action Handler
+
+310. Set content as visible
+   Was in Period 1 categories: Rules Engine - Visibility Action Handler
+
+311. Set content list as hidden
+   Was in Period 1 categories: Rules Engine - Visibility Action Handler
+
+312. Set content list as visible
+   Was in Period 1 categories: Rules Engine - Visibility Action Handler
+
+313. Set hasElseCondition true even if existing RuleInfo has it false
+   Was in Period 1 categories: Rules Engine - Rule Executor Utilities
+
+314. Set hasElseCondition true for deeply nested fallback with no logic at the end
+   Was in Period 1 categories: Rules Engine - Rule Executor Utilities
+
+315. Set hasElseCondition true when fallback has no logic
+   Was in Period 1 categories: Rules Engine - Rule Executor Utilities
+
+316. Set multiple answers on MultiSelect using SetSingleAnswerId and run fallback when logic is false
+   Was in Period 1 categories: Rules Engine - Auto-Select Rules
+
+317. Set section as hidden
+   Was in Period 1 categories: Rules Engine - Visibility Action Handler
+
+318. Set section as visible
+   Was in Period 1 categories: Rules Engine - Visibility Action Handler
+
+319. Set timeout when pwaUpdate query parameter is present
+   Was in Period 1 categories: Other - Uncategorized
+
+320. Sets cog state when response is received
+   Was in Period 1 categories: UI Components - Component Library
+
+321. Sets spirometry state when response is received
+   Was in Period 1 categories: UI Components - Component Library
+
+322. Shows
+   Was in Period 1 categories: UI Components - Diagnosis Validation Components
+
+323. Shows green icon when all questions are answered
+   Was in Period 1 categories: UI Components - Diagnosis Validation Components
+
+324. Shows yellow icon when questions are unanswered and not confirmed
+   Was in Period 1 categories: UI Components - Diagnosis Validation Components
+
+325. Skip UnsetSingleAnswerId when contentId is already in deletes
+   Was in Period 1 categories: Rules Engine - General Action Handler
+
+326. Track analytics events during form completion
+   Was in Period 1 categories: Context Writer E2E - VIHE Form
+
+327. Update conflicts when diagnoses change
+   Was in Period 1 categories: State Management - Context Layer Tests
+
+328. Update existing metadata
+   Was in Period 1 categories: Rules Engine - General Action Handler
+
+329. Update existing required metadata
+   Was in Period 1 categories: Rules Engine - Required Action Handler, Rules Engine - Required Action Handler
+
+330. Use Else separator for last statement without logic
+   Was in Period 1 categories: Other - Uncategorized
+
+331. Use ElseIf separator for middle statements
+   Was in Period 1 categories: Other - Uncategorized
+
+332. Use When separator for first statement
+   Was in Period 1 categories: Other - Uncategorized
+
+333. Use custom default color for bg utility
+   Was in Period 1 categories: UI Components - Navigation Components
+
+334. Use custom default color for border utility
+   Was in Period 1 categories: UI Components - Navigation Components
+
+335. Use custom default color when invalid color is provided
+   Was in Period 1 categories: UI Components - Navigation Components
+
+336. Use custom default color when provided
+   Was in Period 1 categories: UI Components - Navigation Components
+
+337. Use provided actions in fallback when no else block provided
+   Was in Period 1 categories: Other - Uncategorized
+
+338. Use self as ServiceWorkerGlobalScope
+   Was in Period 1 categories: Other - Uncategorized
+
+339. Work with all combinations of colors and utilities
+   Was in Period 1 categories: UI Components - Navigation Components
+
+340. Writes answers when response is received from external editor
+   Was in Period 1 categories: UI Components - Component Library
+
+341. Writes result answers when response is received from external editor
+   Was in Period 1 categories: UI Components - Component Library
+
