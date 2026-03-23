@@ -10,7 +10,7 @@
  * Usage:
  *   node scripts/report-junit-to-zephyr.js path/to/junit.xml
  *   node scripts/report-junit-to-zephyr.js reports/*.xml
- *   node scripts/report-junit-to-zephyr.js reports/   # all **/*.xml under directory
+ *   node scripts/report-junit-to-zephyr.js reports/   # directory: all .xml files recursively
  *   node scripts/report-junit-to-zephyr.js --dry-run path/to/junit.xml
  *
  * Mapping lookup order for each <testcase>:
