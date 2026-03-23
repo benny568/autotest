@@ -76,12 +76,18 @@ jobs:
       - name: Install autotest dependencies (reporter)
         run: npm ci
 
+      # secrets.* is not allowed in step `if:` — gate inside the script via env instead
       - name: Add Signify npm registry token
-        if: ${{ secrets.SIGNIFY_NPM_TOKEN != '' }}
         working-directory: client
+        env:
+          SIGNIFY_NPM_TOKEN: ${{ secrets.SIGNIFY_NPM_TOKEN }}
         run: |
+          if [ -z "$SIGNIFY_NPM_TOKEN" ]; then
+            echo "SIGNIFY_NPM_TOKEN not set; skipping Signify .npmrc line (client npm ci may fail on private packages)."
+            exit 0
+          fi
           echo '' >> .npmrc
-          echo '//chpackages.censeohealth.com/npm/npm/:_authToken=${{ secrets.SIGNIFY_NPM_TOKEN }}' >> .npmrc
+          echo "//chpackages.censeohealth.com/npm/npm/:_authToken=${SIGNIFY_NPM_TOKEN}" >> .npmrc
 
       - name: Install client dependencies
         working-directory: client
